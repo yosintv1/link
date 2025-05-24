@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href='https://www.yosintv.link/favicon.ico' rel='icon' type='image/x-icon'/>
+<title> Cricket | Football Live </title>
+<style>
+body {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+    overflow: hidden;
+    font-family: Tahoma, sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+#player {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+#text {
+    position: fixed;
+    bottom: 50px;
+    width: 100%;
+    font-size: 20px;
+    color: #fff;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+}
+    
+</style>
+    
+</head>
+<body>
+<iframe id="player" loading="lazy" allowfullscreen></iframe>
+  
+<!--
+https://yosintv2.github.io/tv/soon.html
+-->
+    
+<script>
+const channels = {
+____: " ____  ",    
+    
+// https://cr7tv.github.io/player/dmca.html?url=https://live1.chengyangkaisuo.com/live/58267289_f34981ec369bb309112e0c174bdecfc0_nsd.m3u8 
+
+
+
+
+
+    
+    
+mstar: " https://yosintv2.github.io/bkp/plyrr.html?url=https://wikihznew.newkso.ru/wikihz/wiki68/mono.m3u8  ",     // El Classico
+digisports: " https://yosintv2.github.io/bkp/plyrr.html?url=https://top1new.newkso.ru/top1/premium400/mono.m3u8  ",     // El Classico
+
+    
+dazn1: " https://yosintv2.github.io/bkp/plyrr.html?url=https://ddy6new.newkso.ru/ddy6/premium426/mono.m3u8 ",     
+dazn2: " https://yosintv2.github.io/bkp/plyrr.html?url=https://ddy6new.newkso.ru/ddy6/premium427/mono.m3u8 ",   
+vodafone: " https://yosintv2.github.io/bkp/plyrr.html?url=https://windnew.newkso.ru/wind/premium260/mono.m3u8 ",    
+mlaliga: " https://yosintv2.github.io/bkp/plyrr.html?url=https://wikihznew.newkso.ru/wikihz/wiki68/mono.m3u8  ",  
+sslaliga: " https://yosintv2.github.io/bkp/plyrr.html?url=https://wikihznew.newkso.ru/wikihz/wikissll/mono.m3u8  ",    
+tudn: " https://yosintv2.github.io/bkp/plyrr.html?url=https://wikihznew.newkso.ru/wikihz/wikitudn/mono.m3u8  ",    
+usanet: " https://yosintv2.github.io/bkp/plyrr.html?url=https://top1-cdnnew.newkso.ru/top1-cdn/SY3DkGmVQL/mono.m3u8  ",    
+mego1: " https://yosintv2.github.io/bkp/plyrr.html?url=https://esx1new.newkso.ru/esx1/primamegogosport1/mono.m3u8  ",    
+
+
+// All Devices 
+sportsnet: " https://yosintv2.github.io/bkp/plyrr.html?url=https://v1.thetvapp.to/hls/sportsnet-360/index.m3u8  ",    // Canada Sportsnet360
+sports5: " https://yosintv2.github.io/bkp/plyrr.html?url=https://rgelive.akamaized.net/hls/live/2043151/radiolive/playlist.m3u8  ",    
+ssports: " https://yosintv2.github.io/bkp/plyrr.html?url=https://bcovlive-a.akamaihd.net/540fcb034b144b848e7ff887f61a293a/eu-central-1/6415845530001/profile_0/chunklist.m3u8  ",    
+ssports2: " https://yosintv2.github.io/bkp/plyrr.html?url=https://bcovlive-a.akamaihd.net/29c60f23ea4840ba8726925a77fcfd0b/eu-central-1/6415845530001/profile_0/chunklist.m3u8 ",    //Full Serie A Matches
+
+
+    
+bein1: " https://yosintv2.github.io/bkp/plyrr.html?url=https://top1-cdnnew.newkso.ru/top1-cdn/vTwenKA7UX/mono.m3u8 ",     
+bein2: " https://yosintv2.github.io/bkp/plyrr.html?url=https://top1-cdnnew.newkso.ru/top1-cdn/aPIH0OWym5/mono.m3u8 ",     
+bein3: " https://yosintv2.github.io/bkp/plyrr.html?url=https://top1-cdnnew.newkso.ru/top1-cdn/mrn5B7M8LK/mono.m3u8 ",     
+bein4: " https://yosintv2.github.io/bkp/plyrr.html?url=https://top1-cdnnew.newkso.ru/top1-cdn/L8ovVrGfKb/mono.m3u8 ",     
+bein5: " https://yosintv2.github.io/bkp/plyrr.html?url=https://top1-cdnnew.newkso.ru/top1-cdn/7varJ3UV8l/mono.m3u8 ",     
+ad1: " https://yosintv2.github.io/bkp/plyrr.html?url=https://top1-cdnnew.newkso.ru/top1-cdn/N0nZoHOXsC/mono.m3u8  ",    
+
+
+
+bein11: " https://yosintv.github.io/yosintv/jwplayers.html?src=https://player1.kooraliveeee.space/albaplayer/bein1/ ",     
+bein22: " https://yosintv.github.io/yosintv/jwplayers.html?src=https://player1.kooraliveeee.space/albaplayer/bein2/ ",     
+bein33: " https://yosintv.github.io/yosintv/jwplayers.html?src=https://player1.kooraliveeee.space/albaplayer/bein3/ ",     
+bein144: " https://yosintv.github.io/yosintv/jwplayers.html?src=https://player1.kooraliveeee.space/albaplayer/bein4/ ",     
+bein55: " https://yosintv.github.io/yosintv/jwplayers.html?src=https://player1.kooraliveeee.space/albaplayer/bein5/ ",     
+
+    
+tsn1: " https://yosintv2.github.io/bkp/plyrr.html?url=https://fl5.moveonjoy.com/TSN_1/index.m3u8  ",    
+tsn2: " https://yosintv2.github.io/bkp/plyrr.html?url=https://fl5.moveonjoy.com/TSN_2/index.m3u8  ",    
+tsn3: " https://yosintv2.github.io/bkp/plyrr.html?url=https://fl5.moveonjoy.com/TSN_3/index.m3u8  ",    
+tsn4: " https://yosintv2.github.io/bkp/plyrr.html?url=https://fl5.moveonjoy.com/TSN_4/index.m3u8  ",    
+tsn5: " https://yosintv2.github.io/bkp/plyrr.html?url=https://fl5.moveonjoy.com/TSN_5/index.m3u8  ",    
+
+true1: " https://yosintv2.github.io/bkp/plyrr.html?url=https://still-grass-cb06.wirdytv.workers.dev/02_PremierHD1_720p/chunklist.m3u8  ",    
+true2: " https://yosintv2.github.io/bkp/plyrr.html?url=https://still-grass-cb06.wirdytv.workers.dev/02_PremierHD2_720p/chunklist.m3u8  ",    
+true3: " https://yosintv2.github.io/bkp/plyrr.html?url=https://still-grass-cb06.wirdytv.workers.dev/02_PremierHD3_720p/chunklist.m3u8  ",    
+true4: " https://yosintv2.github.io/bkp/plyrr.html?url=https://still-grass-cb06.wirdytv.workers.dev/02_PremierHD4_720p/chunklist.m3u8  ",    
+
+
+    
+tnt1: " https://yosintv2.github.io/bkp/plyrr.html?url=https://wikihznew.newkso.ru/wikihz/wiki64/mono.m3u8  ",    
+espnusa: " https://yosintv2.github.io/bkp/plyrr.html?url=https://v1.thetvapp.to/hls/espn-deportes/tracks-v1a1/mono.m3u8  ",    // All Live
+ssc5: " https://yosintv2.github.io/bkp/plyrr.html?url=https://top1-cdnnew.newkso.ru/top1-cdn/qmbw7lxpX4/mono.m3u8  ",    
+ssc1: " https://cr7tv.github.io/player/dmca.html?url=https://top1-cdnnew.newkso.ru/top1-cdn/TCg2MOW5wi/mono.m3u8  ",    
+
+
+    
+// Barcelona
+mancity1: " https://cr7tv.github.io/tv/ft.html?id=vodafone  ",    
+mancity2: " https://cr7tv.github.io/tv/ft.html?id=bein1  ",    
+
+
+
+// Al Nassr
+alnassr1: " https://cr7tv.github.io/tv/ft.html?id=dazn2  ",    
+alnassr2: " https://cr7tv.github.io/tv/ft.html?id=dazn2  ",    
+
+
+    
+// Tottenham
+tottenham1: " https://cr7tv.github.io/tv/ft.html?id=dazn2  ",    
+tottenham2: " https://cr7tv.github.io/tv/ft.html?id=dazn2  ",    
+
+
+
+// Chelsea
+chelsea1: " https://cr7tv.github.io/player/dmca.html?url=https://hls.uouetrq19.com/live/hd-en-6MsG9cen8VShKwfbZh.m3u8?txSecret=e592de858d0ccd11816a351d861a84f1&txTime=6828E0762  ",    
+chelsea2: " https://cr7tv.github.io/tv/ft.html?id=dazn2  ",    
+
+
+
+
+
+
+
+
+
+
+
+    
+//Nepal LIVE
+  
+psl: "https://live.mrgamingstream.net/Player/m3u?url=https://stream2.aryzap.com/v1/018a8885b8951eb401a603639363/018a88860ada09831f17035d95dd/main.m3u8 ",     // NEPAL
+psl1: " https://live.mrgamingstream.net/Player/jwads.html?src=https://live.mrgamingstream.net/Player/m3u?url=https://stream2.aryzap.com/v1/018a8885b8951eb401a603639363/018a88860ada09831f17035d95dd/main.m3u8",     // NEPAL
+
+
+hd1: " https://yosintv.github.io/yosintv/jwplayers.html?src=https://sportzonline.ps/channels/hd/hd1.php  ",    
+hd2: " https://yosintv.github.io/yosintv/jwplayers.html?src=https://sportzonline.ps/channels/hd/hd2.php  ",    
+hd3: " https://yosintv.github.io/yosintv/jwplayers.html?src=https://sportzonline.ps/channels/hd/hd3.php  ",    
+hd4: " https://yosintv.github.io/yosintv/jwplayers.html?src=https://sportzonline.ps/channels/hd/hd4.php  ",    
+hd5: " https://yosintv.github.io/yosintv/jwplayers.html?src=https://sportzonline.ps/channels/hd/hd5.php  ",    
+hd6: " https://yosintv.github.io/yosintv/jwplayers.html?src=https://sportzonline.ps/channels/hd/hd6.php  ",    
+hd7: " https://yosintv.github.io/yosintv/jwplayers.html?src=https://sportzonline.ps/channels/hd/hd7.php  ",    
+hd8: " https://yosintv.github.io/yosintv/jwplayers.html?src=https://sportzonline.ps/channels/hd/hd8.php  ",    
+hd9: " https://yosintv.github.io/yosintv/jwplayers.html?src=https://sportzonline.ps/channels/hd/hd9.php  ",    
+hd10: " https://yosintv.github.io/yosintv/jwplayers.html?src=https://sportzonline.ps/channels/hd/hd10.php  ",
+
+
+br1: " https://yosintv.github.io/yosintv/jwplayers.html?src=https://sportzonline.ps/channels/bra/br1.php  ",    
+br2: " https://yosintv.github.io/yosintv/jwplayers.html?src=https://sportzonline.ps/channels/bra/br2.php  ",    
+br3: " https://yosintv.github.io/yosintv/jwplayers.html?src=https://sportzonline.ps/channels/bra/br3.php  ",    
+br4: " https://yosintv.github.io/yosintv/jwplayers.html?src=https://sportzonline.ps/channels/bra/br4.php  ",    
+br5: " https://yosintv.github.io/yosintv/jwplayers.html?src=https://sportzonline.ps/channels/bra/br5.php  ",    
+br6: " https://yosintv.github.io/yosintv/jwplayers.html?src=https://sportzonline.ps/channels/bra/br6.php  ",
+
+    
+    
+};
+
+
+
+    
+const urlParams = new URLSearchParams(window.location.search);
+const channel = urlParams.get('id');
+function setChannel(channel) {
+const iframe = document.getElementById('player');
+iframe.src = channels[channel] || channels.tnt1;
+}
+setChannel(channel);
+</script>
+
+
+
+
+        <!-- BEGIN: Powered by Supercounters.com -->
+        <div style="position:fixed;top:0;left:0;width:100%;height:1px;overflow:hidden;visibility:hidden;z-index:9999;">
+            <script type="text/javascript" src="//widget.supercounters.com/ssl/online_i.js"></script>
+            <script type="text/javascript">
+                sc_online_i(1707252,"ffffff","ffffff");
+            </script>
+            <noscript><a href="https://www.supercounters.com/" style="visibility:hidden;">free online counter</a></noscript>
+        </div>
+    
+</body>
+</html>

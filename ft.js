@@ -7,9 +7,10 @@ const channels = {
     france3: " https://yosintv.github.io/player/dmca.html?url=https://funn-g1163.huibo.tv/DGI/H2111/chunks.m3u8?p=49&cf=1749387850&d=&ip=104.28.243.105&e=1799388450&h=b2341e94fef4cbfd90abd6bcb697a19c ",
     
     
-    portual1: " https://linnk.pages.dev/football?id=vodafone ",
-    portual2: " https://linnk.pages.dev/football?id=dazn1 ",
-    portual3: " https://linnk.pages.dev/soon?time=1749409200 ",
+    portugal1: " https://linnk.pages.dev/football?id=vodafone ",
+    portugal2: " https://linnk.pages.dev/football?id=dazn1 ",
+    portugal3: " https://linnk.pages.dev/soon?time=1749409200 ",
+    portugal4: " https://linnk.pages.dev/soon?time=1749409200 ",
 
 
     

@@ -35,7 +35,7 @@ psl1: " https://live.mrgamingstream.net/Player/jwads.html?src=https://live.mrgam
 
 
 
-    
+soon: " https://yosintv2.github.io/tv/soon.html",    
 };
 
 
@@ -45,6 +45,6 @@ const urlParams = new URLSearchParams(window.location.search);
 const channel = urlParams.get('id');
 function setChannel(channel) {
 const iframe = document.getElementById('player');
-iframe.src = channels[channel] || channels.tnt1;
+iframe.src = channels[channel] || channels.soon;
 }
 setChannel(channel);

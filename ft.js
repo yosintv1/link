@@ -2,7 +2,7 @@ const channels = {
     ____: " ____  ",
 
 
-    france1: " https://yosintv.github.io/yosintv/jwplayers.html?src=https://goalstreamz.com/events/stream1/ ",
+    france1: " https://yosintv.github.io/player/dmca.html?url=https://funn-g1163.huibo.tv/DGI/H2111/chunks.m3u8?p=49&cf=1749387850&d=&ip=104.28.243.105&e=1799388450&h=b2341e94fef4cbfd90abd6bcb697a19c ",
     france2: " https://yosintv.github.io/player/dmca.html?url=https://funn-g1163.huibo.tv/GE/H19/chunks.m3u8?p=46&cf=1749387824&d=&ip=104.28.243.105&e=1799388424&h=c0ed3f2caed6a08ec0124cdb7b4bd1e5 ",
     france3: " https://linnk.pages.dev/soon?time=1749387600 ",
     

@@ -2,7 +2,7 @@ const channels = {
     ____: " ____  ",
 
 
-    france1: " https://linnk.pages.dev/soon?time=1749387600 ",
+    france1: " https://yosintv.github.io/yosintv/jwplayers.html?src=https://goalstreamz.com/events/stream1/ ",
     france2: " https://linnk.pages.dev/soon?time=1749387600 ",
     france3: " https://linnk.pages.dev/soon?time=1749387600 ",
     

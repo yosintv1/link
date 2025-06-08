@@ -2,9 +2,9 @@ const channels = {
     ____: " ____  ",
 
 
-    france1: " https://yosintv.github.io/player/dmca.html?url=https://funn-g1163.huibo.tv/DGI/H2111/chunks.m3u8?p=49&cf=1749387850&d=&ip=104.28.243.105&e=1799388450&h=b2341e94fef4cbfd90abd6bcb697a19c ",
+    france1: " https://yosintv.github.io/player/dmca.html?url=https://hls.uouetrq19.com/live/hd-en-6MuSNix6mMSJP8Y4qm.m3u8?txSecret=c666cde273f81a2eda95a5f56783f8c6&txTime=6846DBC2 ",
     france2: " https://yosintv.github.io/player/dmca.html?url=https://funn-g1163.huibo.tv/GE/H19/chunks.m3u8?p=46&cf=1749387824&d=&ip=104.28.243.105&e=1799388424&h=c0ed3f2caed6a08ec0124cdb7b4bd1e5 ",
-    france3: " https://linnk.pages.dev/soon?time=1749387600 ",
+    france3: " https://yosintv.github.io/player/dmca.html?url=https://funn-g1163.huibo.tv/DGI/H2111/chunks.m3u8?p=49&cf=1749387850&d=&ip=104.28.243.105&e=1799388450&h=b2341e94fef4cbfd90abd6bcb697a19c ",
     
     
     portual1: " https://linnk.pages.dev/soon?time=1749409200 ",

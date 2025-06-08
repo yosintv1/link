@@ -1,6 +1,6 @@
 const channels = {
 
-    nepal1: " /soon?time=1749376800 ",  
+    nepal1: " https://yosintv.github.io/player/dmca.html?url=https://1a-1791.com/live/r31jzt5k/slot-133/g6ml-kuxv_1080p/chunklist_DVR.m3u8 ",  
     nepal2: " /soon?time=1749376800 ", 
     
     

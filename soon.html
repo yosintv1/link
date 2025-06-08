@@ -91,7 +91,6 @@
             height: 100%;
             background: linear-gradient(90deg, #ff4d4d, #ffb07c);
             transform: translateX(-100%);
-            animation: progress 600s linear forwards;
         }
         @keyframes progress {
             to { transform: translateX(0); }
@@ -128,7 +127,7 @@
         /* Responsive Design */
         @media (max-width: 768px) {
             .typewriter {
-                font-size: 1.4rem;
+                font-size: 2rem;
                 border-right: 4px solid #ff4d4d;
             }
             .message {
@@ -159,7 +158,7 @@
 
         @media (max-width: 480px) {
             .typewriter {
-                font-size: 1.3rem;
+                font-size: 1.5rem;
                 border-right: 3px solid #ff4d4d;
             }
             .message {
@@ -196,7 +195,7 @@
         <div class="message">Join YoSinTV For Live Event!</div>
         <div class="countdown">Starting in <span id="timer">10:00</span></div>
         <div class="progress-bar">
-            <div class="progress"></div>
+            <div class="progress" id="progress"></div>
         </div>
     </div>
     <script>
@@ -208,24 +207,52 @@
             setTimeout(restartAnimation, 6000);
         }
 
+        function getStartTimeFromURL() {
+            const params = new URLSearchParams(window.location.search);
+            const time = params.get('time');
+            if (time) {
+                const timestamp = parseInt(time, 10);
+                if (!isNaN(timestamp) && timestamp > 0) {
+                    return new Date(timestamp * 1000); // Convert Unix timestamp to Date
+                }
+            }
+            // Default to 10 minutes from now if no valid time
+            return new Date(Date.now() + 10 * 60 * 1000);
+        }
+
         function startCountdown() {
             const timer = document.getElementById('timer');
-            let timeLeft = 600; // 10 minutes in seconds
+            const progress = document.getElementById('progress');
+            const targetTime = getStartTimeFromURL();
+            const totalDuration = (targetTime - Date.now()) / 1000; // Total seconds
+            let timeLeft = totalDuration;
+
+            if (timeLeft <= 0) {
+                timer.textContent = 'Now Live!';
+                progress.style.transform = 'translateX(0)';
+                return;
+            }
+
+            // Set progress bar animation duration
+            progress.style.animation = `progress ${timeLeft}s linear forwards`;
+
             const countdown = setInterval(() => {
-                const minutes = Math.floor(timeLeft / 60);
-                const seconds = timeLeft % 60;
-                timer.textContent = `${minutes}:${seconds.toString().padStart(2, '0')}`;
-                timeLeft--;
-                if (timeLeft < 0) {
+                timeLeft = (targetTime - Date.now()) / 1000;
+                if (timeLeft <= 0) {
                     clearInterval(countdown);
                     timer.textContent = 'Now Live!';
+                    progress.style.transform = 'translateX(0)';
+                    return;
                 }
+                const minutes = Math.floor(timeLeft / 60);
+                const seconds = Math.floor(timeLeft % 60);
+                timer.textContent = `${minutes}:${seconds.toString().padStart(2, '0')}`;
             }, 1000);
         }
 
         function createParticles() {
             const particlesContainer = document.getElementById('particles');
-            const particleCount = window.innerWidth < 768 ? 15 : 20; // Reduce particles on smaller screens
+            const particleCount = window.innerWidth < 768 ? 15 : 20;
             for (let i = 0; i < particleCount; i++) {
                 const particle = document.createElement('div');
                 particle.className = 'particle';

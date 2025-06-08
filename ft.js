@@ -7,7 +7,7 @@ const channels = {
     france3: " https://yosintv.github.io/player/dmca.html?url=https://funn-g1163.huibo.tv/DGI/H2111/chunks.m3u8?p=49&cf=1749387850&d=&ip=104.28.243.105&e=1799388450&h=b2341e94fef4cbfd90abd6bcb697a19c ",
     
     
-    portugal2: " https://yosintv.github.io/player/dmca.html?url=https://hls.uouetrq19.com/live/hd-en-6MuSNix6bzYcQdUhxK.m3u8?txSecret=4658ab1fc1ae1d3aa2ceaac1fe9658b4&txTime=68472FAA ",
+    portugal2: " https://yosintv2.github.io/ads/soco?m=9912060 ",
     portugal1: " https://yosintv2.github.io/ads/soco?m=9912096 ",
     
     portugal3: " https://yosintv.github.io/player/dmca.html?url=https://funn-g1163.huibo.tv/GE/H19/chunks.m3u8?p=46&cf=1749410221&d=&ip=126.37.212.112&e=1799410821&h=0520a7f3a74b9c01fb6c52f5ed4c1825 ",

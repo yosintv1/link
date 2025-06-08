@@ -10,7 +10,7 @@ const channels = {
     portugal1: " https://yosintv.github.io/yosintv/jwplayers.html?src=https://cheapmarket.blog/idea/?id=1 ",
     portugal2: " hhttps://linnk.pages.dev/football?id=vodafone ",
     portugal3: " https://yosintv.github.io/player/1m.html?url=https://hipaf6u2j3pwygg.nice-flower.store/v3/director/VE1ZmFkOWQ4ZjQyMDQ3LWRkYzktNzhlNC0yOGFlLTVhMGEzNjVh/master.m3u8 ",
-    portugal4: " https://linnk.pages.dev/soon?time=1749409200 ",
+    portugal4: " https://yosintv.github.io/yosintv/jwplayers.html?src=https://cheapmarket.blog/idea/?id=1  ",
 
 
     

@@ -28,7 +28,7 @@ setChannel(channel);
 
 (function() {
   // Define the allowed domain
-  const allowedDomain = 'tv.yosintvlive.com';
+  const allowedDomains = ['tv.yosintvlive.com', 'linnk.pages.dev'];
 
   // Get the current domain
   const currentDomain = window.location.hostname;

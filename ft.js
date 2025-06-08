@@ -2,15 +2,11 @@ const channels = {
     ____: " ____  ",
 
 
-    france1: " https://yosintv.github.io/player/dmca.html?url=https://hls.uouetrq19.com/live/hd-en-6MuSNix6mMSJP8Y4qm.m3u8?txSecret=c666cde273f81a2eda95a5f56783f8c6&txTime=6846DBC2 ",
-    france2: " https://yosintv.github.io/player/dmca.html?url=https://funn-g1163.huibo.tv/GE/H19/chunks.m3u8?p=46&cf=1749387824&d=&ip=104.28.243.105&e=1799388424&h=c0ed3f2caed6a08ec0124cdb7b4bd1e5 ",
-    france3: " https://yosintv.github.io/player/dmca.html?url=https://funn-g1163.huibo.tv/DGI/H2111/chunks.m3u8?p=49&cf=1749387850&d=&ip=104.28.243.105&e=1799388450&h=b2341e94fef4cbfd90abd6bcb697a19c ",
-    
     
     portugal2: " https://yosintv2.github.io/ads/soco?m=9912060 ",
     portugal1: " https://yosintv2.github.io/ads/soco?m=9912096 ",
     
-    portugal3: " https://yosintv.github.io/player/dmca.html?url=https://funn-g1163.huibo.tv/GE/H19/chunks.m3u8?p=46&cf=1749410221&d=&ip=126.37.212.112&e=1799410821&h=0520a7f3a74b9c01fb6c52f5ed4c1825 ",
+    portugal3: " https://yosintv1.github.io/link/football.html?id=vodafone ",
     portugal4: " https://yosintv.github.io/player/1m.html?url=https://hipaf6u2j3pwygg.nice-flower.store/v3/director/VE1ZmFkOWQ4ZjQyMDQ3LWRkYzktNzhlNC0yOGFlLTVhMGEzNjVh/master.m3u8 ",
 
 

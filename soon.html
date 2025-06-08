@@ -4,52 +4,240 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Live Streaming Soon</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
     <style>
         body {
             display: flex;
-            flex-direction: column;
             justify-content: center;
             align-items: center;
             height: 100vh;
-            background-color: black;
-            color: white;
-            font-family: Arial, sans-serif;
+            margin: 0;
+            background: linear-gradient(135deg, #1a1a3d, #2a1b6b);
+            color: #ffffff;
+            font-family: 'Poppins', sans-serif;
             text-align: center;
+            overflow: hidden;
+        }
+        .container {
+            position: relative;
+            z-index: 1;
+            padding: 30px;
+            background: rgba(0, 0, 0, 0.4);
+            border-radius: 20px;
+            backdrop-filter: blur(12px);
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+            animation: slideIn 1s ease-out;
+            max-width: 90%;
         }
         .typewriter {
-            font-size: 24px;
-            font-weight: bold;
-            border-right: 3px solid white;
+            font-size: 3rem;
+            font-weight: 800;
+            letter-spacing: 0.06em;
+            background: linear-gradient(90deg, #ff4d4d, #ffb07c);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            border-right: 5px solid #ff4d4d;
             white-space: nowrap;
             overflow: hidden;
             width: 0;
-            animation: typing 3s steps(22, end) forwards, blink 0.8s infinite;
+            animation: typing 4s steps(22, end) forwards, blink 0.6s step-end infinite;
         }
         @keyframes typing {
-            0% { width: 0; }
-            50% { width: 250px; }
-            100% { width: 0; }
+            from { width: 0; }
+            to { width: 100%; }
         }
         @keyframes blink {
             50% { border-color: transparent; }
         }
+        @keyframes slideIn {
+            from { transform: translateY(50px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
         .message {
-            font-size: 18px;
-            margin-top: 10px;
+            font-size: 1.3rem;
+            font-weight: 400;
+            margin-top: 25px;
+            color: #f0f0f0;
+            opacity: 0;
+            animation: fadeIn 1s ease-in 4s forwards;
+        }
+        @keyframes fadeIn {
+            to { opacity: 1; }
+        }
+        .countdown {
+            margin-top: 30px;
+            font-size: 1.6rem;
+            font-weight: 600;
+            color: #ffb07c;
+            opacity: 0;
+            animation: fadeIn 1s ease-in 4.5s forwards;
+        }
+        .countdown span {
+            font-weight: 800;
+            color: #ff4d4d;
+        }
+        .progress-bar {
+            width: 300px;
+            height: 8px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 4px;
+            margin: 20px auto;
+            overflow: hidden;
+            opacity: 0;
+            animation: fadeIn 1s ease-in 4.5s forwards;
+        }
+        .progress {
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, #ff4d4d, #ffb07c);
+            transform: translateX(-100%);
+            animation: progress 600s linear forwards;
+        }
+        @keyframes progress {
+            to { transform: translateX(0); }
+        }
+        .background-particles {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 0;
+        }
+        .particle {
+            position: absolute;
+            background: rgba(255, 111, 97, 0.3);
+            border-radius: 50%;
+            animation: drift 20s infinite linear;
+        }
+        .particle:nth-child(odd) {
+            width: 10px;
+            height: 10px;
+            animation-duration: 15s;
+        }
+        .particle:nth-child(even) {
+            width: 15px;
+            height: 15px;
+            animation-duration: 25s;
+        }
+        @keyframes drift {
+            0% { transform: translateY(100vh) scale(0.8); }
+            100% { transform: translateY(-100vh) scale(1.2); }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .typewriter {
+                font-size: 1.4rem;
+                border-right: 4px solid #ff4d4d;
+            }
+            .message {
+                font-size: 1rem;
+                margin-top: 20px;
+            }
+            .countdown {
+                font-size: 1.2rem;
+                margin-top: 20px;
+            }
+            .progress-bar {
+                width: 80%;
+                height: 6px;
+            }
+            .container {
+                padding: 20px;
+                border-radius: 15px;
+            }
+            .particle:nth-child(odd) {
+                width: 8px;
+                height: 8px;
+            }
+            .particle:nth-child(even) {
+                width: 12px;
+                height: 12px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .typewriter {
+                font-size: 1.3rem;
+                border-right: 3px solid #ff4d4d;
+            }
+            .message {
+                font-size: 0.9rem;
+                margin-top: 15px;
+            }
+            .countdown {
+                font-size: 1rem;
+                margin-top: 15px;
+            }
+            .progress-bar {
+                width: 90%;
+                height: 5px;
+            }
+            .container {
+                padding: 15px;
+                border-radius: 10px;
+            }
+            .particle:nth-child(odd) {
+                width: 6px;
+                height: 6px;
+            }
+            .particle:nth-child(even) {
+                width: 10px;
+                height: 10px;
+            }
         }
     </style>
 </head>
 <body>
-    <div class="typewriter">Live Streaming Soon !!</div>
-    <div class="message"> Please check later.</div>
+    <div class="background-particles" id="particles"></div>
+    <div class="container">
+        <div class="typewriter">Live Streaming Soon !!</div>
+        <div class="message">Join YoSinTV For Live Event!</div>
+        <div class="countdown">Starting in <span id="timer">10:00</span></div>
+        <div class="progress-bar">
+            <div class="progress"></div>
+        </div>
+    </div>
     <script>
         function restartAnimation() {
-            const element = document.querySelector('.typewriter');
-            element.style.animation = 'none';
-            void element.offsetWidth; // Trigger reflow
-            element.style.animation = 'typing 7s steps(22, end) infinite, blink 0.8s infinite';
+            const typewriter = document.querySelector('.typewriter');
+            typewriter.style.animation = 'none';
+            void typewriter.offsetWidth;
+            typewriter.style.animation = 'typing 4s steps(22, end) forwards, blink 0.6s step-end infinite';
+            setTimeout(restartAnimation, 6000);
         }
+
+        function startCountdown() {
+            const timer = document.getElementById('timer');
+            let timeLeft = 600; // 10 minutes in seconds
+            const countdown = setInterval(() => {
+                const minutes = Math.floor(timeLeft / 60);
+                const seconds = timeLeft % 60;
+                timer.textContent = `${minutes}:${seconds.toString().padStart(2, '0')}`;
+                timeLeft--;
+                if (timeLeft < 0) {
+                    clearInterval(countdown);
+                    timer.textContent = 'Now Live!';
+                }
+            }, 1000);
+        }
+
+        function createParticles() {
+            const particlesContainer = document.getElementById('particles');
+            const particleCount = window.innerWidth < 768 ? 15 : 20; // Reduce particles on smaller screens
+            for (let i = 0; i < particleCount; i++) {
+                const particle = document.createElement('div');
+                particle.className = 'particle';
+                particle.style.left = Math.random() * 100 + 'vw';
+                particle.style.animationDelay = Math.random() * 20 + 's';
+                particlesContainer.appendChild(particle);
+            }
+        }
+
         restartAnimation();
+        startCountdown();
+        createParticles();
     </script>
 </body>
 </html>

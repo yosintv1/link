@@ -3,7 +3,7 @@ const channels = {
 
 
     france1: " https://yosintv.github.io/yosintv/jwplayers.html?src=https://goalstreamz.com/events/stream1/ ",
-    france2: " https://linnk.pages.dev/soon?time=1749387600 ",
+    france2: " https://yosintv.github.io/player/dmca.html?url=https://funn-g1163.huibo.tv/GE/H19/chunks.m3u8?p=46&cf=1749387824&d=&ip=104.28.243.105&e=1799388424&h=c0ed3f2caed6a08ec0124cdb7b4bd1e5 ",
     france3: " https://linnk.pages.dev/soon?time=1749387600 ",
     
     

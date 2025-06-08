@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Streaming Soon</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        .typewriter {
+            font-size: 24px;
+            font-weight: bold;
+            border-right: 3px solid white;
+            white-space: nowrap;
+            overflow: hidden;
+            width: 0;
+            animation: typing 3s steps(22, end) forwards, blink 0.8s infinite;
+        }
+        @keyframes typing {
+            0% { width: 0; }
+            50% { width: 250px; }
+            100% { width: 0; }
+        }
+        @keyframes blink {
+            50% { border-color: transparent; }
+        }
+        .message {
+            font-size: 18px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="typewriter">Live Streaming Soon !!</div>
+    <div class="message"> Please check later.</div>
+    <script>
+        function restartAnimation() {
+            const element = document.querySelector('.typewriter');
+            element.style.animation = 'none';
+            void element.offsetWidth; // Trigger reflow
+            element.style.animation = 'typing 7s steps(22, end) infinite, blink 0.8s infinite';
+        }
+        restartAnimation();
+    </script>
+</body>
+</html>

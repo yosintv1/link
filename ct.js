@@ -13,9 +13,6 @@ const channels = {
     soon: " https://yosintv2.github.io/tv/soon.html",
 };
 
-
-
-
 const urlParams = new URLSearchParams(window.location.search);
 const channel = urlParams.get('id');
 
@@ -29,15 +26,28 @@ setChannel(channel);
 
 
 (function() {
-  // Define the allowed domains
+  // Define the allowed domains (replace with your actual domains)
   const allowedDomains = ['tv.yosintvlive.com', 'linnk.pages.dev'];
 
   // Get the current domain
-  const currentDomain = window.location.hostname;
+  const currentDomain = window.location.hostname.toLowerCase();
+  
+  // Debugging: Log the current domain
+  console.log('Current domain:', currentDomain);
+  console.log('Allowed domains:', allowedDomains);
 
-  // Check if the current domain matches any of the allowed domains
-  if (!allowedDomains.includes(currentDomain) && !allowedDomains.some(domain => currentDomain.endsWith('.' + domain))) {
-    // Redirect to yosin-tv.net
-    window.location.href = 'https://yosin-tv.net';
+  // Check if the current domain is allowed (exact match or subdomain)
+  const isAllowed = allowedDomains.includes(currentDomain) || 
+                   allowedDomains.some(domain => currentDomain.endsWith('.' + domain.toLowerCase()));
+
+  // Debugging: Log whether the domain is allowed
+  console.log('Is domain allowed?', isAllowed);
+
+  // Redirect if the domain is not allowed
+  if (!isAllowed) {
+    console.log('Redirecting to https://yosin-tv.net');
+    window.location.replace('https://yosin-tv.net'); // Use replace to avoid history stack issues
   }
 })();
+
+

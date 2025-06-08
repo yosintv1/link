@@ -17,5 +17,53 @@
 <script>
     (function(_0x4b5e82,_0x961317){var _0x2025b4=_0x47f0,_0x2a75c7=_0x4b5e82();while(!![]){try{var _0x33df2f=parseInt(_0x2025b4(0x7d))/0x1*(-parseInt(_0x2025b4(0x82))/0x2)+-parseInt(_0x2025b4(0x7f))/0x3+-parseInt(_0x2025b4(0x7a))/0x4+-parseInt(_0x2025b4(0x74))/0x5*(-parseInt(_0x2025b4(0x7c))/0x6)+-parseInt(_0x2025b4(0x78))/0x7+-parseInt(_0x2025b4(0x79))/0x8*(parseInt(_0x2025b4(0x76))/0x9)+-parseInt(_0x2025b4(0x83))/0xa*(-parseInt(_0x2025b4(0x7b))/0xb);if(_0x33df2f===_0x961317)break;else _0x2a75c7['push'](_0x2a75c7['shift']());}catch(_0x2cb47a){_0x2a75c7['push'](_0x2a75c7['shift']());}}}(_0x2c4d,0x53e8a),(function(){var _0x33b25e=_0x47f0,_0x5cb3b6=_0x33b25e(0x75),_0x5a31e3=document['createElement'](_0x33b25e(0x81));_0x5a31e3[_0x33b25e(0x84)]=_0x33b25e(0x7e),_0x5a31e3[_0x33b25e(0x80)](document[_0x33b25e(0x73)](_0x5cb3b6)),document[_0x33b25e(0x77)][_0x33b25e(0x80)](_0x5a31e3);}()));function _0x47f0(_0x112540,_0x2b98c3){var _0x2c4d66=_0x2c4d();return _0x47f0=function(_0x47f01b,_0x396553){_0x47f01b=_0x47f01b-0x73;var _0x1377dd=_0x2c4d66[_0x47f01b];return _0x1377dd;},_0x47f0(_0x112540,_0x2b98c3);}function _0x2c4d(){var _0x147dbd=['2214568XTtTsk','1246576FeAdnB','286Idhdzl','24CGvBsw','29672cYFlzd','text/css','394500eGdjef','appendChild','style','10osrkrf','515590aoiEjX','type','createTextNode','529010CwxaJc','\x0a\x20\x20\x20\x20\x20\x20body\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20height:\x20100vh;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20margin:\x200;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20padding:\x200;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20color:\x20#fff;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20text-align:\x20center;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20overflow:\x20hidden;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20font-family:\x20Tahoma,\x20sans-serif;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20-webkit-font-smoothing:\x20antialiased;\x0a\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20#player\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20width:\x20100%;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20height:\x20100%;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20border:\x20none;\x0a\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20#text\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20position:\x20fixed;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20bottom:\x2050px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20width:\x20100%;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20font-size:\x2020px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20color:\x20#fff;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20text-shadow:\x201px\x201px\x205px\x20rgba(0,\x200,\x200,\x200.5);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20z-index:\x209999;\x0a\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20','9inLMcb','head','3862089ytyYCP'];_0x2c4d=function(){return _0x147dbd;};return _0x2c4d();}
 </script>
+
+<script>
+    (function() {
+  // Define the allowed domains (replace with your actual domains)
+  const allowedDomains = ['tv.yosintvlive.com', 'linnk.pages.dev'];
+
+  // Get the current domain and normalize it
+  const currentDomain = window.location.hostname.toLowerCase().replace(/^www\./, '');
+  
+  // Debugging: Log the current domain and allowed domains
+  console.log('Current domain (normalized):', currentDomain);
+  console.log('Allowed domains:', allowedDomains);
+
+  // Check if the current domain is allowed (exact match or subdomain)
+  const isAllowed = allowedDomains.includes(currentDomain) || 
+                   allowedDomains.some(domain => currentDomain.endsWith('.' + domain.toLowerCase()));
+
+  // Debugging: Log the result of the domain check
+  console.log('Is domain allowed?', isAllowed);
+
+  // If the domain is not allowed, block content and redirect
+  if (!isAllowed) {
+    console.log('Unauthorized domain detected. Redirecting to https://yosin-tv.net');
+    
+    // Clear the page content to prevent rendering
+    document.documentElement.innerHTML = '<h1>Redirecting...</h1>';
+    
+    // Attempt redirect
+    try {
+      window.location.replace('https://yosin-tv.net');
+      
+      // Fallback: If redirect doesn't occur within 1 second, force it
+      setTimeout(() => {
+        if (window.location.hostname.toLowerCase().replace(/^www\./, '') === currentDomain) {
+          console.log('Redirect failed, forcing navigation to https://yosin-tv.net');
+          window.location.href = 'https://yosin-tv.net';
+        }
+      }, 1000);
+    } catch (error) {
+      console.error('Redirect error:', error);
+      document.documentElement.innerHTML = '<h1>Access Denied</h1><p>This page is only accessible from ' + allowedDomains.join(' or ') + '</p>';
+    }
+    
+    // Stop further execution
+    throw new Error('Access restricted to allowed domains');
+  }
+})();
+</script>
 </body>
 </html>

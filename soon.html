@@ -193,7 +193,7 @@
     <div class="container">
         <div class="typewriter">Live Streaming Soon !!</div>
         <div class="message">Join us for an unforgettable live event!</div>
-        <div class="countdown">Starting in <span id="timer">10:00</span></div>
+        <div class="countdown" id="countdown"><span id="timer">10:00</span></div>
         <div class="progress-bar">
             <div class="progress" id="progress"></div>
         </div>
@@ -221,6 +221,7 @@
         }
 
         function startCountdown() {
+            const countdown = document.getElementById('countdown');
             const timer = document.getElementById('timer');
             const progress = document.getElementById('progress');
             const targetTime = getStartTimeFromURL();
@@ -228,7 +229,7 @@
             let timeLeft = totalDuration;
 
             if (timeLeft <= 0) {
-                timer.textContent = 'Match Started';
+                countdown.textContent = 'Match Started';
                 progress.style.transform = 'translateX(0)';
                 return;
             }
@@ -236,11 +237,11 @@
             // Set progress bar animation duration
             progress.style.animation = `progress ${timeLeft}s linear forwards`;
 
-            const countdown = setInterval(() => {
+            const countdownInterval = setInterval(() => {
                 timeLeft = (targetTime - Date.now()) / 1000;
                 if (timeLeft <= 0) {
-                    clearInterval(countdown);
-                    timer.textContent = 'Match Started';
+                    clearInterval(countdownInterval);
+                    countdown.textContent = 'Match Started';
                     progress.style.transform = 'translateX(0)';
                     return;
                 }

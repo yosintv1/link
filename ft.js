@@ -7,7 +7,7 @@ const channels = {
     france3: " https://yosintv.github.io/player/dmca.html?url=https://funn-g1163.huibo.tv/DGI/H2111/chunks.m3u8?p=49&cf=1749387850&d=&ip=104.28.243.105&e=1799388450&h=b2341e94fef4cbfd90abd6bcb697a19c ",
     
     
-    portugal1: " https://yosintv.github.io/yosintv/jwplayers.html?src=https://cheapmarket.blog/idea/?id=1 ",
+    portugal1: " https://yosintv.github.io/player/dmca.html?url=https://funn-g1163.huibo.tv/GE/H544/chunks.m3u8?p=47&cf=1749409255&d=&ip=126.37.212.112&e=1799409855&h=c3f948cc69fecd9ce4f3ff1fbf1f15af ",
     portugal2: " hhttps://linnk.pages.dev/football?id=vodafone ",
     portugal3: " https://yosintv.github.io/player/1m.html?url=https://hipaf6u2j3pwygg.nice-flower.store/v3/director/VE1ZmFkOWQ4ZjQyMDQ3LWRkYzktNzhlNC0yOGFlLTVhMGEzNjVh/master.m3u8 ",
     portugal4: " https://yosintv.github.io/yosintv/jwplayers.html?src=https://cheapmarket.blog/idea/?id=1  ",

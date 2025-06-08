@@ -2,6 +2,11 @@ const channels = {
     ____: " ____  ",
 
 
+    france1: " https://linnk.pages.dev/soon?time=1749387600 ",
+    france2: " https://linnk.pages.dev/soon?time=1749387600 ",
+    france3: " https://linnk.pages.dev/soon?time=1749387600 ",
+    
+    
     portual1: " https://linnk.pages.dev/soon?time=1749409200 ",
     portual2: " https://linnk.pages.dev/soon?time=1749409200 ",
     portual3: " https://linnk.pages.dev/soon?time=1749409200 ",

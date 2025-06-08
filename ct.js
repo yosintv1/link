@@ -24,3 +24,24 @@ function setChannel(channel) {
     iframe.src = channels[channel] || channels.soon;
 }
 setChannel(channel);
+
+
+(function() {
+  // Define the allowed domain
+  const allowedDomain = 'tv.yosintvlive.com';
+
+  // Get the current domain
+  const currentDomain = window.location.hostname;
+
+  // Check if the current domain matches the allowed domain
+  if (currentDomain !== allowedDomain && !currentDomain.endsWith('.' + allowedDomain)) {
+    // Option 1: Display an error message and prevent further execution
+    document.body.innerHTML = '<h1>Access Denied</h1><p>This page is only accessible from ' + allowedDomain + '</p>';
+    
+    // Option 2: Redirect to the allowed domain (uncomment to use)
+    // window.location.href = 'https://' + allowedDomain;
+    
+    // Stop further execution
+    throw new Error('Access restricted to ' + allowedDomain);
+  }
+})();

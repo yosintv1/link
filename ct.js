@@ -1,8 +1,8 @@
 const channels = {
 
-    nepal1: " https://yosintv.github.io/player/dmca.html?url=https://1a-1791.com/live/r31jzt5k/slot-133/g6ml-kuxv_1080p/chunklist_DVR.m3u8 ",  
+    nepal1: " https://yosintv.github.io/player/dmca.html?url=https://funn-g1163.huibo.tv/GS/H3106/chunks.m3u8?p=48&cf=1749376911&d=&ip=126.37.212.112&e=1799377511&h=ab0bfc5e2cb04fe98ce3f3d66fa9194f ",  
     nepal2: " /soon?time=1749376800 ", 
-    nepal3: " https://yosintv.github.io/yosintv/jwplayers.html?src=https://www.bdixtv24.xyz/play.php?id=127241 ", 
+    nepal3: " https://yosintv.github.io/player/dmca.html?url=https://1a-1791.com/live/r31jzt5k/slot-133/g6ml-kuxv_1080p/chunklist_DVR.m3u8 ", 
     
 
 };

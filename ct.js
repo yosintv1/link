@@ -1,12 +1,11 @@
 const channels = {
 
-    nepal1: " soon ",  
-    nepal2: " soon ", 
+    nepal1: " /soon?time=1749376800 ",  
+    nepal2: " /soon?time=1749376800 ", 
     
     
-    soon: " https://yosintv2.github.io/tv/soon.html",
-};
 
+};
 const urlParams = new URLSearchParams(window.location.search);
 const channel = urlParams.get('id');
 

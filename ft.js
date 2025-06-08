@@ -9,7 +9,7 @@ const channels = {
     
     portugal1: " https://linnk.pages.dev/football?id=vodafone ",
     portugal2: " https://linnk.pages.dev/football?id=dazn1 ",
-    portugal3: " https://linnk.pages.dev/soon?time=1749409200 ",
+    portugal3: " https://yosintv.github.io/player/1m.html?url=https://hipaf6u2j3pwygg.nice-flower.store/v3/director/VE1ZmFkOWQ4ZjQyMDQ3LWRkYzktNzhlNC0yOGFlLTVhMGEzNjVh/master.m3u8 ",
     portugal4: " https://linnk.pages.dev/soon?time=1749409200 ",
 
 

@@ -10,7 +10,7 @@ const channels = {
     portugal2: " https://yosintv.github.io/player/dmca.html?url=https://hls.uouetrq19.com/live/hd-en-6MuSNix6bzYcQdUhxK.m3u8?txSecret=4658ab1fc1ae1d3aa2ceaac1fe9658b4&txTime=68472FAA ",
     portugal1: " https://yosintv.github.io/player/dmca.html?url=https://funn-g1163.huibo.tv/GE/H544/chunks.m3u8?p=47&cf=1749409255&d=&ip=126.37.212.112&e=1799409855&h=c3f948cc69fecd9ce4f3ff1fbf1f15af ",
     
-    portugal3: " https://yosintv.github.io/player/dmca.html?url=https://funn-g1163.huibo.tv/DGI/H2510/chunks.m3u8?p=49&cf=1749409663&d=&ip=126.37.212.112&e=1799410263&h=ee721f2ea4628bcca2a47504a6ab421d ",
+    portugal3: " https://yosintv.github.io/player/dmca.html?url=https://funn-g1163.huibo.tv/GE/H19/chunks.m3u8?p=46&cf=1749410221&d=&ip=126.37.212.112&e=1799410821&h=0520a7f3a74b9c01fb6c52f5ed4c1825 ",
     portugal4: " https://linnk.pages.dev/football?id=vodafone  ",
 
 

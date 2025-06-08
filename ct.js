@@ -1,7 +1,7 @@
 const channels = {
 
     nepal1: " soon ", // IPLPPV
-    nepal2: " https://www.youtube.com/embed/zrQyQjx3M_Y ", // IPLPPV
+    nepal2: " soon ", // IPLPPV
 
 
     willow: " https://yosintv.github.io/player/dmca.html?url=?url=https://funn-g1163.huibo.tv/GE/H15/chunks.m3u8?p=46&cf=1746716743&d=&ip=106.154.152.247&e=1746917343&h=8e876870ae6582fff8a13e64ea8838fc ", // IPLPPV

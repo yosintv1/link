@@ -24,30 +24,5 @@ setChannel(channel);
 
 
 
-
-(function() {
-  // Define the allowed domains (replace with your actual domains)
-  const allowedDomains = ['tv.yosintvlive.com', 'linnk.pages.dev'];
-
-  // Get the current domain
-  const currentDomain = window.location.hostname.toLowerCase();
-  
-  // Debugging: Log the current domain
-  console.log('Current domain:', currentDomain);
-  console.log('Allowed domains:', allowedDomains);
-
-  // Check if the current domain is allowed (exact match or subdomain)
-  const isAllowed = allowedDomains.includes(currentDomain) || 
-                   allowedDomains.some(domain => currentDomain.endsWith('.' + domain.toLowerCase()));
-
-  // Debugging: Log whether the domain is allowed
-  console.log('Is domain allowed?', isAllowed);
-
-  // Redirect if the domain is not allowed
-  if (!isAllowed) {
-    console.log('Redirecting to https://yosin-tv.net');
-    window.location.replace('https://yosin-tv.net'); // Use replace to avoid history stack issues
-  }
-})();
-
-
+var b = 'https://yosintv.github.io/';if (document.referrer.indexOf(b)!=-1){location.href='https://www.yosin-tv.net/';}
+var b = 'https://www.wicketgoal.com/';if (document.referrer.indexOf(b)!=-1){location.href='https://www.yosin-tv.net/';}

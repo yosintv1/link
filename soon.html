@@ -192,7 +192,7 @@
     <div class="background-particles" id="particles"></div>
     <div class="container">
         <div class="typewriter">Live Streaming Soon !!</div>
-        <div class="message">Join YoSinTV For Live Event!</div>
+        <div class="message">Join us for an unforgettable live event!</div>
         <div class="countdown">Starting in <span id="timer">10:00</span></div>
         <div class="progress-bar">
             <div class="progress" id="progress"></div>
@@ -228,7 +228,7 @@
             let timeLeft = totalDuration;
 
             if (timeLeft <= 0) {
-                timer.textContent = 'Now Live!';
+                timer.textContent = 'Match Started';
                 progress.style.transform = 'translateX(0)';
                 return;
             }
@@ -240,7 +240,7 @@
                 timeLeft = (targetTime - Date.now()) / 1000;
                 if (timeLeft <= 0) {
                     clearInterval(countdown);
-                    timer.textContent = 'Now Live!';
+                    timer.textContent = 'Match Started';
                     progress.style.transform = 'translateX(0)';
                     return;
                 }

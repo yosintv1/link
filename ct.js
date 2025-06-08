@@ -26,22 +26,18 @@ function setChannel(channel) {
 setChannel(channel);
 
 
+
+
 (function() {
-  // Define the allowed domain
+  // Define the allowed domains
   const allowedDomains = ['tv.yosintvlive.com', 'linnk.pages.dev'];
 
   // Get the current domain
   const currentDomain = window.location.hostname;
 
-  // Check if the current domain matches the allowed domain
-  if (currentDomain !== allowedDomain && !currentDomain.endsWith('.' + allowedDomain)) {
-    // Option 1: Display an error message and prevent further execution
-    document.body.innerHTML = '<h1>Access Denied</h1><p>This page is only accessible from ' + allowedDomain + '</p>';
-    
-    // Option 2: Redirect to the allowed domain (uncomment to use)
-    // window.location.href = 'https://' + allowedDomain;
-    
-    // Stop further execution
-    throw new Error('Access restricted to ' + allowedDomain);
+  // Check if the current domain matches any of the allowed domains
+  if (!allowedDomains.includes(currentDomain) && !allowedDomains.some(domain => currentDomain.endsWith('.' + domain))) {
+    // Redirect to yosin-tv.net
+    window.location.href = 'https://yosin-tv.net';
   }
 })();

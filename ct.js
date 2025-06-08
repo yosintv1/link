@@ -1,6 +1,6 @@
 const channels = {
 
-    nepal1: " /soon ", // IPLPPV
+    nepal1: " soon ", // IPLPPV
     nepal2: " https://www.youtube.com/embed/zrQyQjx3M_Y ", // IPLPPV
 
 

@@ -2,13 +2,12 @@ const channels = {
     ____: " ____  ",
 
 
-    england: " https://yosintv.github.io/player/dmca.html?url=https://hls.uouetrq19.com/live/hd-en-6MtMP7JqocLYdb8ELf.m3u8?txSecret=154b7a70f5e10ad038b20fd4030541e2&txTime=6845B3FC ",
-    england1: " https://yosintv.github.io/player/dmca.html?url=https://funn-g1163.huibo.tv/GE/H19/chunks.m3u8?p=46&cf=1749312128&d=&ip=126.37.212.112&e=1799312728&h=549213e2e0cf267bdfce729071f9aa04 ",
+    portual1: " https://yosintv.github.io/player/dmca.html?url=https://hls.uouetrq19.com/live/hd-en-6MtMP7JqocLYdb8ELf.m3u8?txSecret=154b7a70f5e10ad038b20fd4030541e2&txTime=6845B3FC ",
+    portugal2: " https://yosintv.github.io/player/dmca.html?url=https://funn-g1163.huibo.tv/GE/H19/chunks.m3u8?p=46&cf=1749312128&d=&ip=126.37.212.112&e=1799312728&h=549213e2e0cf267bdfce729071f9aa04 ",
+    portugal3: " https://yosintv.github.io/player/dmca.html?url=https://funn-g1163.huibo.tv/GE/H19/chunks.m3u8?p=46&cf=1749312128&d=&ip=126.37.212.112&e=1799312728&h=549213e2e0cf267bdfce729071f9aa04 ",
 
 
-    messi1: " https://yosintv.github.io/player/dmca.html?url=https://hls.uouetrq19.com/live/sd-6Mr9gDFPo5vUiujctP.m3u8?txSecret=ed69b089876c19fc75f2db46c5018dc0&txTime=68439079 ",
-    messi2: " https://yosintv.github.io/player/dmca.html?url=https://hls.uouetrq19.com/live/sd-6Mr9gDFPo5vUiujctP.m3u8?txSecret=ed69b089876c19fc75f2db46c5018dc0&txTime=68439079 ",
-
+    
 
     mstar: " https://yosintv2.github.io/bkp/plyrr.html?url=https://wikihznew.newkso.ru/wikihz/wiki68/mono.m3u8  ", // El Classico
     digisports: " https://yosintv2.github.io/bkp/plyrr.html?url=https://top1new.newkso.ru/top1/premium400/mono.m3u8  ", // El Classico

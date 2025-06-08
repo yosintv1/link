@@ -107,17 +107,17 @@
             position: absolute;
             background: rgba(255, 111, 97, 0.3);
             border-radius: 50%;
-            animation: drift 20s infinite linear;
+            animation: drift 12s infinite linear;
         }
         .particle:nth-child(odd) {
             width: 10px;
             height: 10px;
-            animation-duration: 15s;
+            animation-duration: 10s;
         }
         .particle:nth-child(even) {
             width: 15px;
             height: 15px;
-            animation-duration: 25s;
+            animation-duration: 12s;
         }
         @keyframes drift {
             0% { transform: translateY(100vh) scale(0.8); }
@@ -149,10 +149,12 @@
             .particle:nth-child(odd) {
                 width: 8px;
                 height: 8px;
+                animation-duration: 10s;
             }
             .particle:nth-child(even) {
                 width: 12px;
                 height: 12px;
+                animation-duration: 12s;
             }
         }
 
@@ -180,10 +182,12 @@
             .particle:nth-child(odd) {
                 width: 6px;
                 height: 6px;
+                animation-duration: 10s;
             }
             .particle:nth-child(even) {
                 width: 10px;
                 height: 10px;
+                animation-duration: 12s;
             }
         }
     </style>
@@ -253,12 +257,12 @@
 
         function createParticles() {
             const particlesContainer = document.getElementById('particles');
-            const particleCount = window.innerWidth < 768 ? 15 : 20;
+            const particleCount = window.innerWidth < 768 ? 22 : 30;
             for (let i = 0; i < particleCount; i++) {
                 const particle = document.createElement('div');
                 particle.className = 'particle';
                 particle.style.left = Math.random() * 100 + 'vw';
-                particle.style.animationDelay = Math.random() * 20 + 's';
+                particle.style.animationDelay = Math.random() * 12 + 's';
                 particlesContainer.appendChild(particle);
             }
         }

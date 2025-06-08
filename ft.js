@@ -3,7 +3,7 @@ const channels = {
 
 
     
-    portugal2: " https://yosintv2.github.io/ads/soco?m=9912060 ",
+    portugal2: " https://yosintv.github.io/player/dmca.html?url=https://fv1163.huibo.tv/GE/H19/chunks.m3u8?wsSecret=bf80a5efe072184d5f711bae380cfe15&wsTime=1749417013 ",
     portugal1: " https://yosintv2.github.io/ads/soco?m=9912096 ",
     
     portugal3: " https://yosintv1.github.io/link/football.html?id=vodafone ",

@@ -1,0 +1,22 @@
+{
+  "matches": [
+    {
+      "team1": "Team A",
+      "team1_logo": "https://via.placeholder.com/40",
+      "team2": "Team B",
+      "team2_logo": "https://via.placeholder.com/40",
+      "match_time": "2025-05-18T14:00:00+09:00",
+      "details_url": "/game1/match-details/1",
+      "duration": 90
+    },
+    {
+      "team1": "Team C",
+      "team1_logo": "https://via.placeholder.com/40",
+      "team2": "Team D",
+      "team2_logo": "https://via.placeholder.com/40",
+      "match_time": "2025-05-18T20:00:00+09:00",
+      "details_url": "/game1/match-details/2",
+      "duration": 90
+    }
+  ]
+}

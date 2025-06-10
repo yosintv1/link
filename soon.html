@@ -196,8 +196,8 @@
     <div class="background-particles" id="particles"></div>
     <div class="container">
         <div class="typewriter">Live Streaming Soon !!</div>
-        <div class="message"> Join YoSinTV For Live Event! </div>
-        <div class="countdown" id="countdown"><span id="timer">10:00</span></div>
+        <div class="message">Join YoSinTV For Live Event!</div>
+        <div class="countdown" id="countdown"><span id="timer">0h 0m 0s</span></div>
         <div class="progress-bar">
             <div class="progress" id="progress"></div>
         </div>
@@ -249,9 +249,10 @@
                     progress.style.transform = 'translateX(0)';
                     return;
                 }
-                const minutes = Math.floor(timeLeft / 60);
+                const hours = Math.floor(timeLeft / 3600);
+                const minutes = Math.floor((timeLeft % 3600) / 60);
                 const seconds = Math.floor(timeLeft % 60);
-                timer.textContent = `${minutes}:${seconds.toString().padStart(2, '0')}`;
+                timer.textContent = `${hours}h ${minutes}m ${seconds}s`;
             }, 1000);
         }
 

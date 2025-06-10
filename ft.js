@@ -129,7 +129,7 @@ const channels = {
     br6: " https://yosintv.github.io/yosintv/jwplayers.html?src=https://sportzonline.ps/channels/bra/br6.php  ",
     mutv: " https://yosintv.github.io/player/dmca.html?url=https://bcovlive-a.akamaihd.net/r6b4170ad9e8e4ed49986ecc03bac588b/eu-west-1/6058004203001/playlist.m3u8  ",
 
-    soon: " https://yosintv2.github.io/tv/soon.html",
+    soon: " /soon ",
 
 };
 

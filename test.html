@@ -252,11 +252,11 @@
                     const matchEnd = new Date(matchTime.getTime() + duration * 60 * 1000); // End time
 
                     if (now >= matchEnd) {
-                        element.textContent = 'MATCH OVER';
+                        element.textContent = 'Match Ends';
                         element.classList.remove('match-status-countdown', 'match-status-live');
                         element.classList.add('match-status-over');
                     } else if (now >= matchTime) {
-                        element.textContent = 'LIVE';
+                        element.textContent = 'Live NOW';
                         element.classList.remove('match-status-countdown', 'match-status-over');
                         element.classList.add('match-status-live');
                     } else {

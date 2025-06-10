@@ -1,7 +1,7 @@
 const channels = {
     ____: " ____  ",
 
-    nepal: " https://www.youtube.com/embed/7Y6UFBntBK8 ",
+    nepal: " hhttps://yosintv2.github.io/ads/soco?m=372746 ",
 
     
     portugal2: " https://yosintv2.github.io/ads/soco?m=327159 ",

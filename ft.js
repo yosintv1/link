@@ -1,7 +1,7 @@
 const channels = {
     ____: " ____  ",
 
-    nepal: " https://yosintv2.github.io/ads/ak?m=170430 ",
+    nepal: " https://yosintv2.github.io/ads/ak?m=372746 ",
 
     
     portugal2: " https://yosintv2.github.io/ads/soco?m=327159 ",

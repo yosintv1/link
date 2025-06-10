@@ -7,8 +7,8 @@ const channels = {
 
     
     
-    nepal1: " https://yosintv.github.io/player/player3.html?url=https://1a-1791.com/live/b9exd20e/slot-31/ad06-advv_1080p/chunklist.m3u8 ",  
-    nepal2: "  https://linnk.pages.dev/cricket?id=nepal1  ", 
+    nepal1: " https://yosintv.github.io/yosintv/jwplayers.html?src=https://live.mrgamingstream.net/link.html?id=nepal ",  
+    nepal2: "  https://yosintv.github.io/player/player3.html?url=https://1a-1791.com/live/b9exd20e/slot-31/ad06-advv_1080p/chunklist.m3u8  ", 
     nepal3: "  https://linnk.pages.dev/cricket?id=nepal1  ", 
     
 

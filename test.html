@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sports Match Live Schedule</title>
+    <style>
+        /* Scoped styles for match schedule to avoid conflicts */
+        .match-schedule-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+            font-family: Arial, sans-serif;
+            box-sizing: border-box;
+        }
+        .match-schedule-title {
+            text-align: center;
+            font-size: 2rem;
+            font-weight: bold;
+            margin-bottom: 2rem;
+            color: #333;
+        }
+        .match-sport-section {
+            margin-bottom: 2rem;
+        }
+        .match-sport-title {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 1rem;
+        }
+        .match-schedule-list {
+            margin: 0 auto;
+        }
+        .match-card {
+            display: block;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            border: 1px solid #ddd; /* Light border */
+            padding: 1rem;
+            margin: 0 1rem 1.5rem;
+            text-decoration: none;
+            color: inherit;
+            transition: background 0.2s;
+            width: calc(100% - 2rem); /* Full width minus margins */
+            box-sizing: border-box;
+        }
+        .match-card:hover {
+            background: #f8f8f8;
+        }
+        .match-card-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .match-team {
+            flex: 1;
+            text-align: center;
+            min-width: 0; /* Prevent overflow */
+        }
+        .match-team img {
+            width: 40px;
+            height: 40px;
+            display: block;
+            margin: 0 auto;
+        }
+        .match-team-name {
+            margin-top: 0.5rem;
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #333;
+            white-space: nowrap; /* Prevent wrapping */
+            overflow: hidden; /* Hide overflow */
+            text-overflow: ellipsis; /* Add ellipsis for very long names */
+        }
+        .match-center {
+            flex: 1;
+            text-align: center;
+        }
+        .match-vs {
+            font-size: 1.25rem;
+            font-weight: bold;
+            color: #555;
+            margin: 0;
+        }
+        .match-status {
+            margin-top: 0.5rem;
+            font-size: 0.9rem;
+            font-weight: 600;
+            display: inline-block;
+        }
+        .match-status-countdown {
+            color: #007bff;
+        }
+        .match-status-live {
+            background: #dc3545;
+            color: #fff;
+            padding: 0.25rem 0.5rem;
+            border-radius: 4px;
+            animation: match-blink 1s step-end infinite;
+        }
+        .match-status-over {
+            background: #999;
+            color: #000; /* Black text as requested, but low visibility */
+            padding: 0.25rem 0.5rem;
+            border-radius: 4px;
+        }
+        @keyframes match-blink {
+            50% { opacity: 0; }
+        }
+        .match-error {
+            text-align: center;
+            color: #dc3545;
+            font-size: 1rem;
+        }
+        @media (max-width: 768px) {
+            .match-schedule-container {
+                padding: 1.5rem 0.5rem;
+            }
+            .match-card {
+                margin: 0 0.5rem 1rem;
+                width: calc(100% - 1rem); /* Adjust for smaller margins */
+            }
+            .match-team-name {
+                font-size: 1rem;
+            }
+            .match-sport-title {
+                font-size: 1.3rem;
+            }
+        }
+        @media (max-width: 480px) {
+            .match-team-name {
+                font-size: 0.9rem; /* Smaller font for very small screens */
+            }
+            .match-vs {
+                font-size: 1rem;
+            }
+            .match-status {
+                font-size: 0.8rem;
+            }
+            .match-sport-title {
+                font-size: 1.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="match-schedule-container">
+        <h1 class="match-schedule-title">Sports Match Live Schedule</h1>
+        <div class="match-sport-section" id="football-matches">
+            <h2 class="match-sport-title">Football Matches</h2>
+            <div class="match-schedule-list" id="football-list">
+                <!-- Football matches will be inserted here -->
+            </div>
+        </div>
+        <div class="match-sport-section" id="cricket-matches">
+            <h2 class="match-sport-title">Cricket Matches</h2>
+            <div class="match-schedule-list" id="cricket-list">
+                <!-- Cricket matches will be inserted here -->
+            </div>
+        </div>
+    </div>
+    <script>
+        async function loadMatches() {
+            try {
+                // Fetch football and cricket JSON files
+                const [footballResponse, cricketResponse] = await Promise.all([
+                    fetch('https://linnk.pages.dev/game1.json'),
+                    fetch('https://linnk.pages.dev/game1.json'),
+                ]);
+
+                // Parse JSON data
+                const footballData = await footballResponse.json();
+                const cricketData = await cricketResponse.json();
+
+                // Render football matches
+                const footballContainer = document.getElementById('football-list');
+                footballData.matches.forEach(match => {
+                    const matchCard = document.createElement('a');
+                    matchCard.href = match.details_url;
+                    matchCard.className = 'match-card';
+                    matchCard.dataset.matchTime = match.match_time;
+                    matchCard.dataset.duration = match.duration;
+                    matchCard.innerHTML = `
+                        <div class="match-card-content">
+                            <div class="match-team">
+                                <img src="${match.team1_logo}" alt="${match.team1} Logo">
+                                <p class="match-team-name">${match.team1}</p>
+                            </div>
+                            <div class="match-center">
+                                <p class="match-vs">VS</p>
+                                <p class="match-status" data-time="${match.match_time}" data-duration="${match.duration}">Loading...</p>
+                            </div>
+                            <div class="match-team">
+                                <img src="${match.team2_logo}" alt="${match.team2} Logo">
+                                <p class="match-team-name">${match.team2}</p>
+                            </div>
+                        </div>
+                    `;
+                    footballContainer.appendChild(matchCard);
+                });
+
+                // Render cricket matches
+                const cricketContainer = document.getElementById('cricket-list');
+                cricketData.matches.forEach(match => {
+                    const matchCard = document.createElement('a');
+                    matchCard.href = match.details_url;
+                    matchCard.className = 'match-card';
+                    matchCard.dataset.matchTime = match.match_time;
+                    matchCard.dataset.duration = match.duration;
+                    matchCard.innerHTML = `
+                        <div class="match-card-content">
+                            <div class="match-team">
+                                <img src="${match.team1_logo}" alt="${match.team1} Logo">
+                                <p class="match-team-name">${match.team1}</p>
+                            </div>
+                            <div class="match-center">
+                                <p class="match-vs">VS</p>
+                                <p class="match-status" data-time="${match.match_time}" data-duration="${match.duration}">Loading...</p>
+                            </div>
+                            <div class="match-team">
+                                <img src="${match.team2_logo}" alt="${match.team2} Logo">
+                                <p class="match-team-name">${match.team2}</p>
+                            </div>
+                        </div>
+                    `;
+                    cricketContainer.appendChild(matchCard);
+                });
+
+                updateMatchStatus(); // Initial update
+            } catch (error) {
+                console.error('Error loading matches:', error);
+                const containers = [document.getElementById('football-list'), document.getElementById('cricket-list')];
+                containers.forEach(container => {
+                    container.innerHTML = '<p class="match-error">Failed to load matches.</p>';
+                });
+            }
+        }
+
+        function updateMatchStatus() {
+            const containers = [
+                { id: 'football-list', element: document.getElementById('football-list') },
+                { id: 'cricket-list', element: document.getElementById('cricket-list') }
+            ];
+            const now = new Date();
+
+            containers.forEach(container => {
+                const statusElements = container.element.querySelectorAll('.match-status');
+
+                // Update status for each match in the section
+                statusElements.forEach(element => {
+                    const matchTime = new Date(element.dataset.time);
+                    const duration = parseInt(element.dataset.duration, 10); // Duration in minutes
+                    const matchEnd = new Date(matchTime.getTime() + duration * 60 * 1000); // End time
+
+                    if (now >= matchEnd) {
+                        element.textContent = 'MATCH OVER';
+                        element.classList.remove('match-status-countdown', 'match-status-live');
+                        element.classList.add('match-status-over');
+                    } else if (now >= matchTime) {
+                        element.textContent = 'LIVE';
+                        element.classList.remove('match-status-countdown', 'match-status-over');
+                        element.classList.add('match-status-live');
+                    } else {
+                        const diff = matchTime - now;
+                        const totalHours = Math.floor(diff / (1000 * 60 * 60));
+                        const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+                        const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+                        element.textContent = `${totalHours}h ${minutes}m ${seconds}s`;
+                        element.classList.remove('match-status-live', 'match-status-over');
+                        element.classList.add('match-status-countdown');
+                    }
+                });
+
+                // Sort matches within the section: upcoming/LIVE at top, MATCH OVER at bottom
+                const matchCards = Array.from(container.element.querySelectorAll('.match-card'));
+                matchCards.sort((a, b) => {
+                    const aStatus = a.querySelector('.match-status').classList.contains('match-status-over');
+                    const bStatus = b.querySelector('.match-status').classList.contains('match-status-over');
+                    if (aStatus && !bStatus) return 1; // Move MATCH OVER to bottom
+                    if (!aStatus && bStatus) return -1; // Keep non-MATCH OVER at top
+                    return 0; // Maintain original order for non-MATCH OVER matches
+                });
+
+                // Re-append sorted cards to the section container
+                container.element.innerHTML = '';
+                matchCards.forEach(card => container.element.appendChild(card));
+            });
+        }
+
+        // Load matches and update status
+        loadMatches();
+        setInterval(updateMatchStatus, 1000);
+    </script>
+</body>
+</html>

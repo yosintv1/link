@@ -7,7 +7,7 @@ const channels = {
 
     
     
-    nepal1: " https://linnk.pages.dev/soon?time=1749549600 ",  
+    nepal1: " https://yosintv.github.io/player/player3.html?url=https://1a-1791.com/live/kd32s8ur/slot-63/i1n5-tryo_1080p/chunklist.m3u8 ",  
     nepal2: " https://linnk.pages.dev/soon?time=1749549600 ", 
     nepal3: " https://linnk.pages.dev/soon?time=1749549600 ", 
     

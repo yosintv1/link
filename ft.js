@@ -8,7 +8,7 @@ const channels = {
     portugal1: " https://yosintv2.github.io/ads/soco?m=9912096 ",
     
     messi1: " https://yosintv2.github.io/ads/ak?m=360663 ",
-    messi2: " https://yosintv2.github.io/ads/ak?m=360663 ",
+    messi2: " https://yosintv.github.io/yosintv/jwplayers.html?src=https://kleanembed.online/embed/aE5dT9yH2uJ8gP1zWn7fK4oL6mV3cB ",
 
 
     

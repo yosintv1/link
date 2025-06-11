@@ -4,7 +4,7 @@ const channels = {
     nepal: " https://yosintv2.github.io/ads/soco?m=372746 ",
 
     
-    brazil1: " https://href.li/?https://yosintv.github.io/yosintv/jwplayers.html?src=https://kleanembed.online/embed/sY1bX6cA8rM3wQ7iN9jV2pE5hU0lGf	 ",
+    brazil1: " https://yosintv.github.io/player/dmca.html?url=https://hls.uouetrq19.com/live/sd-6Mr9gDFPdETYSAwM1H.m3u8?txSecret=c4be8d88ccbab5bba824f23dc099298f&txTime=684A2349	 ",
     brazil2: " https://href.li/?https://yosintv.github.io/yosintv/jwplayers.html?src=https://kleanembed.online/embed/sY1bX6cA8rM3wQ7iN9jV2pE5hU0lGf	 ",
     
     messi1: " https://yosintv.github.io/player/dmca.html?url=https://hls.uouetrq19.com/live/sd-6Mr9gDFPnbMEQfzhtj.m3u8?txSecret=9b6632f1a5e7af655ddaa4a146e76808&txTime=684A1972 ",

@@ -1,6 +1,6 @@
 const channels = {
 
-    england2: " https://yosintv.github.io/player/dmca.html?url=https://funn-g1163.huibo.tv/DGI/H2231/chunks.m3u8?p=49&cf=1749389411&d=&ip=126.37.212.112&e=1799390011&h=c2f5c4bf70d8ae08d5483cfeabec1758 ",  
+    test1: " https://live.mrgamingstream.net/mdp3?id=https://otte.live.fly.ww.aiv-cdn.net/syd-nitro/live/clients/dash/enc/uugw0qkwob/out/v1/acfdcf2dabd24075bb615c6c19ba9bd4/cenc.mpd&key=c84fcd82767a9cd9e2e0c0d1b47a72c5&keyid=ec2147a4b9b1b87ee3d8dc6915bc7928  ",  
     england1: " https://yosintv.github.io/player/dmca.html?url=https://funn-g1163.huibo.tv/GE/H10/chunks.m3u8?p=46&cf=1749389469&d=&ip=126.37.212.112&e=1799390011&h=17d3d83a90238815b3297a9a6317fe6f ", 
     england3: " https://yosintv.github.io/player/dmca.html?url=https://1a-1791.com/live/r31jzt5k/slot-133/g6ml-kuxv_1080p/chunklist_DVR.m3u8 ", 
     

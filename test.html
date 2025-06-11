@@ -19,10 +19,6 @@
             font-size: 2rem;
             font-weight: bold;
             margin-bottom: 2rem;
-            color: #1f2937; /* Dark gray for light mode */
-        }
-        .dark .match-schedule-title {
-            color: #e5e7eb; /* Light gray for dark mode */
         }
         .match-sport-section {
             margin-bottom: 2rem;
@@ -50,7 +46,7 @@
             display: block;
             border-radius: 8px;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            border: 1px solid #d1d5db; /* Light border for light mode */
+            border: 1px solid;
             padding: 1rem;
             margin: 0 1rem 1.5rem;
             text-decoration: none;
@@ -58,17 +54,9 @@
             width: calc(100% - 2rem); /* Same width as league-title */
             max-width: 1168px; /* Same max-width as league-title */
             box-sizing: border-box;
-            background: #ffffff; /* White for light mode */
-        }
-        .dark .match-card {
-            background: #1f2937; /* Dark gray for dark mode */
-            border-color: #4b5563; /* Darker border for dark mode */
         }
         .match-card:hover {
             background: #f8f8f8;
-        }
-        .dark .match-card:hover {
-            background: #374151;
         }
         .match-card-content {
             display: flex;
@@ -93,10 +81,6 @@
             white-space: nowrap;
             overflow: hidden;
             text-overflow: ellipsis;
-            color: #1f2937; /* Dark gray for light mode */
-        }
-        .dark .match-team-name {
-            color: #e5e7eb; /* Light gray for dark mode */
         }
         .match-center {
             flex: 1;
@@ -106,10 +90,6 @@
             font-size: 1.25rem;
             font-weight: bold;
             margin: 0;
-            color: #4b5563; /* Medium gray for light mode */
-        }
-        .dark .match-vs {
-            color: #d1d5db; /* Light gray for dark mode */
         }
         .match-status {
             margin-top: 0.5rem;
@@ -141,72 +121,22 @@
             color: #dc3545;
             font-size: 1rem;
         }
-        /* DMCA Section */
-        .dmca-section {
-            max-width: 1200px;
-            margin: 2rem auto;
-            padding: 1rem;
-            background: #f9fafb; /* Light gray for light mode */
-            border-radius: 8px;
-            text-align: center;
-            color: #4b5563; /* Medium gray for light mode */
-        }
-        .dark .dmca-section {
-            background: #1f2937; /* Dark gray for dark mode */
-            color: #d1d5db; /* Light gray for dark mode */
-        }
-        .dmca-title {
-            font-size: 1.5rem;
-            font-weight: bold;
-            margin-bottom: 1rem;
-            color: #1f2937; /* Dark gray for light mode */
-        }
-        .dark .dmca-title {
-            color: #e5e7eb; /* Light gray for dark mode */
-        }
-        .dmca-text {
-            font-size: 1rem;
-            line-height: 1.5;
-        }
-        /* Ad Container */
-        .ad-container {
-            max-width: 1168px;
-            width: calc(100% - 2rem);
-            margin: 1rem auto;
-            padding: 1rem;
-            background: #e5e7eb; /* Light gray for light mode */
-            border-radius: 8px;
-            text-align: center;
-            color: #4b5563; /* Medium gray for light mode */
-            font-size: 1rem;
-            height: 100px; /* Placeholder height */
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        .dark .ad-container {
-            background: #374151; /* Darker gray for dark mode */
-            color: #d1d5db; /* Light gray for dark mode */
-        }
         @media (max-width: 768px) {
             .match-schedule-container {
                 padding: 1.5rem 0.5rem;
             }
-            .match-card, .ad-container {
+            .match-card {
                 margin: 0 0.5rem 1rem;
                 width: calc(100% - 1rem);
-                max-width: none;
+                max-width: none; /* Remove max-width for smaller screens */
             }
             .league-title {
                 width: calc(100% - 1rem);
-                max-width: none;
+                max-width: none; /* Remove max-width for smaller screens */
                 font-size: 18px;
             }
             .match-team-name {
                 font-size: 1rem;
-            }
-            .dmca-section {
-                padding: 0.5rem;
             }
         }
         @media (max-width: 480px) {
@@ -222,15 +152,17 @@
             .league-title {
                 font-size: 16px;
             }
-            .dmca-title {
-                font-size: 1.25rem;
-            }
-            .dmca-text {
-                font-size: 0.9rem;
-            }
-            .ad-container {
-                height: 80px; /* Smaller height for mobile */
-            }
+        }
+        /* Dark mode styles */
+        .dark .match-schedule-title, .dark .match-team-name, .dark .match-vs {
+            color: #e5e7eb;
+        }
+        .dark .match-card {
+            background: #1f2937;
+            border-color: #4b5563;
+        }
+        .dark .match-card:hover {
+            background: #374151;
         }
         /* Toggle switch styles */
         .toggle {
@@ -277,7 +209,8 @@
 <body class="bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-gray-100 font-sans transition-colors duration-300">
     <header class="bg-white dark:bg-gray-800 shadow-md py-4 px-6 flex justify-between items-center fixed w-full z-10">
         <div class="flex items-center">
-            <img src="https://web.cricfoot.net/logo.png" alt="YoSinTV Logo" class="h-10">
+            <img src="https://via.placeholder.com/50" alt="YoSinTV Logo" class="h-10">
+            <span class="ml-2 text-xl font-bold">YoSinTV</span>
         </div>
         <label class="toggle">
             <input type="checkbox" id="darkModeToggle">
@@ -286,35 +219,28 @@
     </header>
     <main class="pt-20 pb-10">
         <section class="text-center mb-10">
-            <h1 class="text-4xl font-bold mb-4 text-gray-900 dark:text-gray-100">Welcome to YoSinTV Sports Streaming</h1>
+            <h1 class="text-4xl font-bold mb-4">Welcome to YoSinTV LLive Sports </h1>
             <p class="text-lg text-gray-600 dark:text-gray-300">Watch live cricket, football, and highlights anytime, anywhere!</p>
         </section>
         <nav class="flex justify-center space-x-4 mb-10 flex-wrap">
             <button id="cricketBtn" class="px-6 py-3 bg-blue-500 text-white font-semibold rounded-lg hover:bg-blue-600 transition m-2">Cricket Live</button>
             <button id="footballBtn" class="px-6 py-3 bg-blue-500 text-white font-semibold rounded-lg hover:bg-blue-600 transition m-2">Football Live</button>
+            <button id="highlightsBtn" class="px-6 py-3 bg-blue-500 text-white font-semibold rounded-lg hover:bg-blue-600 transition m-2">Highlights</button>
         </nav>
         <div class="match-schedule-container">
-            <div class="match-sport-section" id="cricket-matches">
-                <h2 class="league-title">Cricket Matches</h2>
-                <div class="match-schedule-list" id="cricket-list"></div>
-                <div class="ad-container">Advertisement</div>
-            </div>
             <div class="match-sport-section" id="football-matches">
                 <h2 class="league-title">Football Matches</h2>
                 <div class="match-schedule-list" id="football-list"></div>
-                <div class="ad-container">Advertisement</div>
+            </div>
+            <div class="match-sport-section" id="cricket-matches">
+                <h2 class="league-title">Cricket Matches</h2>
+                <div class="match-schedule-list" id="cricket-list"></div>
             </div>
             <div class="match-sport-section hidden" id="highlights-matches">
                 <h2 class="league-title">Highlights</h2>
                 <div class="match-schedule-list" id="highlights-list"></div>
-                <div class="ad-container">Advertisement</div>
             </div>
         </div>
-        <div class="ad-container">Advertisement</div>
-        <section class="dmca-section">
-            <h2 class="dmca-title">YoSinTV - DMCA</h2>
-            <p class="dmca-text">YoSinTV Doesn't host any media content on it own Site. Our site visitors might use external or third parties services to show content, (Example: Embedding media from sites like Bet365, Dailymotion, Streamable etc ..) We Notify all copyright owners, to discover that the links and media shared by visitors and contained within this site are hosted somewhere else on the web or embedded from other various sites like above.</p>
-        </section>
     </main>
     <script>
         // Dark mode toggle

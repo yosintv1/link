@@ -241,8 +241,11 @@
             justify-content: space-between;
             align-items: center;
             width: 100%;
-            padding: 0;
+            padding: 0 1rem;
             margin: 0;
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
         }
         .logo-container {
             margin-left: 0;
@@ -283,6 +286,9 @@
             }
             .logo-container img {
                 width: 150px;
+            }
+            .header-container {
+                padding: 0 0.5rem;
             }
         }
         @media (max-width: 480px) {
@@ -361,7 +367,7 @@
     </style>
 </head>
 <body class="bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-gray-100 font-sans transition-colors duration-300">
-    <header class="bg-white dark:bg-gray-800 shadow-md py-4 px-6 fixed w-full z-10">
+    <header class="bg-white dark:bg-gray-800 shadow-md py-4 fixed w-full z-10">
         <div class="header-container">
             <div class="logo-container">
                 <img src="https://web.cricfoot.net/logo.png" alt="YoSinTV Logo">
@@ -374,7 +380,7 @@
             </div>
         </div>
     </header>
-    <main class="pt-20 pb-10">
+    <main class="pt-28 pb-10">
         <section class="text-center mb-10">
             <h1 class="text-4xl font-bold mb-4 text-gray-900 dark:text-gray-100">Welcome to YoSinTV Sports Streaming</h1>
             <p class="text-lg text-gray-600 dark:text-gray-300">Watch live cricket, football, and highlights anytime, anywhere!</p>
@@ -383,6 +389,7 @@
             <div class="search-filter-container">
                 <input type="text" id="searchInput" class="search-input" placeholder="Search by team name...">
             </div>
+            <h1 class="match-schedule-title">Sports Match Schedule</h1>
             <div class="match-sport-section" id="cricket-matches">
                 <h2 class="league-title">Cricket Matches</h2>
                 <div class="match-schedule-list" id="cricket-list"></div>

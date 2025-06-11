@@ -236,6 +236,24 @@
         .footer a:hover {
             text-decoration: underline;
         }
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            padding: 0;
+            margin: 0;
+        }
+        .logo-container {
+            margin-left: 0;
+        }
+        .logo-container img {
+            width: 200px;
+            height: auto;
+        }
+        .toggle-container {
+            margin-right: 0;
+        }
         @media (max-width: 768px) {
             .match-schedule-container {
                 padding: 1.5rem 0.5rem;
@@ -262,6 +280,9 @@
             }
             .search-input {
                 width: 100%;
+            }
+            .logo-container img {
+                width: 150px;
             }
         }
         @media (max-width: 480px) {
@@ -293,6 +314,9 @@
             .search-input {
                 padding: 0.5rem;
                 font-size: 0.9rem;
+            }
+            .logo-container img {
+                width: 120px;
             }
         }
         .toggle {
@@ -337,14 +361,18 @@
     </style>
 </head>
 <body class="bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-gray-100 font-sans transition-colors duration-300">
-    <header class="bg-white dark:bg-gray-800 shadow-md py-4 px-6 flex justify-between items-center fixed w-full z-10">
-        <div class="flex items-center">
-            <img src="https://web.cricfoot.net/logo.png" alt="YoSinTV Logo" class="h-10">
+    <header class="bg-white dark:bg-gray-800 shadow-md py-4 px-6 fixed w-full z-10">
+        <div class="header-container">
+            <div class="logo-container">
+                <img src="https://web.cricfoot.net/logo.png" alt="YoSinTV Logo">
+            </div>
+            <div class="toggle-container">
+                <label class="toggle">
+                    <input type="checkbox" id="darkModeToggle">
+                    <span class="slider"></span>
+                </label>
+            </div>
         </div>
-        <label class="toggle">
-            <input type="checkbox" id="darkModeToggle">
-            <span class="slider"></span>
-        </label>
     </header>
     <main class="pt-20 pb-10">
         <section class="text-center mb-10">

@@ -1,8 +1,8 @@
 const channels = {
 
     test1: " https://href.li/https://yosintv.github.io/yosintv/jwplayers.html?src=https://kleanembed.online/embed/j5ru6icHofROsespidec64w0s7lgo8ot  ",  
-    england1: " https://yosintv.github.io/player/dmca.html?url=https://funn-g1163.huibo.tv/GE/H10/chunks.m3u8?p=46&cf=1749389469&d=&ip=126.37.212.112&e=1799390011&h=17d3d83a90238815b3297a9a6317fe6f ", 
-    england3: " https://yosintv.github.io/player/dmca.html?url=https://1a-1791.com/live/r31jzt5k/slot-133/g6ml-kuxv_1080p/chunklist_DVR.m3u8 ", 
+    test1: " https://href.li/https://yosintv.github.io/yosintv/jwplayers.html?src=https://kleanembed.online/embed/8f9b6c2d1e4a7890f3a5b1c8d7e6f4a3  ",  
+    test1: " https://href.li/https://yosintv.github.io/yosintv/jwplayers.html?src=https://kleanembed.online/embed/j5ru6icHofROsespidec64w0s7lgo8ot  ",  
     
 
     

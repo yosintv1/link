@@ -7,8 +7,8 @@ const channels = {
     brazil1: " https://href.li/?https://yosintv.github.io/yosintv/jwplayers.html?src=https://kleanembed.online/embed/sY1bX6cA8rM3wQ7iN9jV2pE5hU0lGf	 ",
     brazil2: " https://href.li/?https://yosintv.github.io/yosintv/jwplayers.html?src=https://kleanembed.online/embed/sY1bX6cA8rM3wQ7iN9jV2pE5hU0lGf	 ",
     
-    messi1: " https://yosintv2.github.io/ads/ak?m=360663 ",
-    messi2: " https://href.li/?https://yosintv.github.io/yosintv/jwplayers.html?src=https://kleanembed.online/embed/sY1bX6cA8rM3wQ7iN9jV2pE5hU0lGf	 ",
+    messi2: " https://yosintv2.github.io/ads/ak?m=360663 ",
+    messi1: " https://href.li/?https://yosintv.github.io/yosintv/jwplayers.html?src=https://kleanembed.online/embed/sY1bX6cA8rM3wQ7iN9jV2pE5hU0lGf	 ",
 
 
     

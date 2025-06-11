@@ -190,34 +190,27 @@
             margin: 0 auto 1rem;
             display: flex;
             gap: 1rem;
-            flex-wrap: wrap;
             justify-content: center;
         }
         .search-input {
             width: 100%;
-            max-width: 400px;
-            padding: 0.5rem;
+            padding: 0.75rem;
             border: 1px solid #d1d5db;
             border-radius: 5px;
             color: #1f2937;
             background: #ffffff;
+            font-size: 1rem;
         }
         .dark .search-input {
             border-color: #4b5563;
             background: #1f2937;
             color: #e5e7eb;
         }
-        .status-filter {
-            padding: 0.5rem;
-            border: 1px solid #d1d5db;
-            border-radius: 5px;
-            background: #ffffff;
-            color: #1f2937;
+        .search-input::placeholder {
+            color: #6b7280;
         }
-        .dark .status-filter {
-            border-color: #4b5563;
-            background: #1f2937;
-            color: #e5e7eb;
+        .dark .search-input::placeholder {
+            color: #9ca3af;
         }
         .footer {
             max-width: 1200px;
@@ -267,9 +260,8 @@
                 flex-direction: column;
                 align-items: center;
             }
-            .search-input, .status-filter {
+            .search-input {
                 width: 100%;
-                max-width: none;
             }
         }
         @media (max-width: 480px) {
@@ -297,6 +289,10 @@
             .footer a {
                 display: inline-block;
                 margin: 0.5rem;
+            }
+            .search-input {
+                padding: 0.5rem;
+                font-size: 0.9rem;
             }
         }
         .toggle {
@@ -358,12 +354,6 @@
         <div class="match-schedule-container">
             <div class="search-filter-container">
                 <input type="text" id="searchInput" class="search-input" placeholder="Search by team name...">
-                <select id="statusFilter" class="status-filter">
-                    <option value="all">All Matches</option>
-                    <option value="live">Live</option>
-                    <option value="upcoming">Upcoming</option>
-                    <option value="ended">Ended</option>
-                </select>
             </div>
             <h1 class="match-schedule-title">Sports Match Schedule</h1>
             <div class="match-sport-section" id="cricket-matches">
@@ -505,7 +495,7 @@
                 });
 
                 updateMatchStatus();
-                setupSearchAndFilter();
+                setupSearch();
             } catch (error) {
                 console.error('Error loading matches:', error);
                 const containers = [document.getElementById('football-list'), document.getElementById('cricket-list'), document.getElementById('highlights-list')];
@@ -563,22 +553,16 @@
                 matchCards.forEach(card => container.element.appendChild(card));
             });
 
-            filterMatches(); // Re-apply filters after status update
+            filterMatches();
         }
 
-        function setupSearchAndFilter() {
+        function setupSearch() {
             const searchInput = document.getElementById('searchInput');
-            const statusFilter = document.getElementById('statusFilter');
-
             searchInput.addEventListener('input', filterMatches);
-            statusFilter.addEventListener('change', filterMatches);
         }
 
         function filterMatches() {
             const searchInput = document.getElementById('searchInput').value.toLowerCase();
-            const statusFilter = document.getElementById('statusFilter').value;
-            const now = new Date();
-
             const containers = [
                 { id: 'football-list', element: document.getElementById('football-list') },
                 { id: 'cricket-list', element: document.getElementById('cricket-list') },
@@ -591,29 +575,15 @@
                 matchCards.forEach(card => {
                     const team1 = card.dataset.team1;
                     const team2 = card.dataset.team2;
-                    const matchTime = new Date(card.dataset.matchTime);
-                    const duration = parseInt(card.dataset.duration, 10);
-                    const matchEnd = new Date(matchTime.getTime() + duration * 60 * 1000);
-
-                    let statusMatch = true;
-                    if (statusFilter === 'live') {
-                        statusMatch = now >= matchTime && now < matchEnd;
-                    } else if (statusFilter === 'upcoming') {
-                        statusMatch = now < matchTime;
-                    } else if (statusFilter === 'ended') {
-                        statusMatch = now >= matchEnd;
-                    }
-
                     const searchMatch = searchInput === '' || team1.includes(searchInput) || team2.includes(searchInput);
 
-                    if (statusMatch && searchMatch) {
+                    if (searchMatch) {
                         card.style.display = 'block';
                     } else {
                         card.style.display = 'none';
                     }
                 });
 
-                // Hide section if no matches are visible
                 const visibleCards = matchCards.filter(card => card.style.display !== 'none');
                 const section = container.element.closest('.match-sport-section');
                 section.style.display = visibleCards.length > 0 ? 'block' : 'none';

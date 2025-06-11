@@ -47,7 +47,7 @@
         .match-card {
             display: block;
             border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0, 0,0.1);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
             border: 1px solid #d1d5db;
             padding: 1rem;
             margin: 0 1rem 1.5rem;
@@ -123,14 +123,14 @@
         }
         .match-status-live {
             background: #dc3545;
-            color: white#fff;
+            color: #fff;
             padding: 0.25rem 0.5rem;
             border-radius: 4px;
             animation: match-blink 1s step-end infinite;
         }
         .match-status-over {
             background: #000;
-            color: white#fff;
+            color: #fff;
             padding: 0.25rem 0.5rem;
             border-radius: 4px;
         }
@@ -144,7 +144,7 @@
         }
         .dmca-section {
             max-width: 1200px;
-            margin: 2rem 0auto;
+            margin: 2rem auto;
             padding: 1rem;
             background: #f9fafb;
             border-radius: 8px;
@@ -171,12 +171,12 @@
         .ad-container {
             max-width: 1168px;
             width: calc(100% - 2rem);
-            margin: 1rem 0auto;
+            margin: 1rem auto;
             padding: 1rem;
             background: #e5e7eb;
             border-radius: 8px;
-            text-aligning: center;
-            color: #333;
+            text-align: center;
+            color: #4b5563;
             font-size: 1rem;
             height: 100px;
             display: flex;
@@ -184,40 +184,39 @@
             justify-content: center;
         }
         .dark .ad-container {
-            background: #222;
-            color: #d1d5;
+            background: #374151;
+            color: #d1d5db;
         }
         .search-filter-container {
             max-width: 1168px;
             margin: 0 auto;
             display: flex;
-            gap: 2rem1;
-            padding: 0 1rem;
+            gap: 1rem;
             justify-content: center;
         }
         .search-input {
             width: 100%;
-            padding: 0.75rem 1rem;
-            border: 1px solid #d1d1d5;
-            border-radius: 10px5px;
-            color: #333;
-            background: #fff;
+            padding: 0.75rem;
+            border: 1px solid #d1d5db;
+            border-radius: 5px;
+            color: #1f2937;
+            background: #ffffff;
             font-size: 1rem;
         }
         .dark .search-input {
-            border-color: #555;
-            background: #222;
-            color: #e5e3;
+            border-color: #4b5563;
+            background: #1f2937;
+            color: #e5e7eb;
         }
-        .search-input::afterplaceholder {
-            color: black#666;
+        .search-input::placeholder {
+            color: #6b7280;
         }
-        .dark .search-input::afterplaceholder {
-            color: #aaa;
+        .dark .search-input::placeholder {
+            color: #9ca3af;
         }
         .footer {
             max-width: 1200px;
-            margin: 2rem 0auto;
+            margin: 2rem auto;
             padding: 1rem;
             background: #f9fafb;
             border-radius: 8px;
@@ -551,10 +550,22 @@
         // Match schedule logic
         async function loadMatches() {
             try {
-                const response = await fetch('https://linnk.pages.dev/game1.json'); // Placeholder URL
+                // Replace with your actual cricket.json URL
+                const response = await fetch('https://linnk.pages.dev/game1.json'); // Example local path; update to your server URL
+                if (!response.ok) {
+                    throw new Error(`HTTP error! Status: ${response.status} ${response.statusText}`);
+                }
+                const contentType = response.headers.get('content-type');
+                if (!contentType || !contentType.includes('application/json')) {
+                    throw new Error('Invalid content type: Expected application/json');
+                }
                 const cricketData = await response.json();
+                if (!cricketData.matches || !Array.isArray(cricketData.matches)) {
+                    throw new Error('Invalid JSON structure: Missing or invalid "matches" array');
+                }
 
                 const cricketContainer = document.getElementById('cricket-list');
+                cricketContainer.innerHTML = ''; // Clear any previous content
                 cricketData.matches.forEach(match => {
                     const matchCard = createMatchCard(match);
                     cricketContainer.appendChild(matchCard);
@@ -563,7 +574,7 @@
                 updateMatchStatus();
                 setupSearch();
             } catch (error) {
-                console.error('Error loading matches:', error);
+                console.error('Error loading matches:', error.message);
                 const container = document.getElementById('cricket-list');
                 container.innerHTML = `<p class="match-error" data-translate="error">${translations[currentLanguage].error}</p>`;
             }

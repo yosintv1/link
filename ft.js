@@ -8,7 +8,7 @@ const channels = {
     
     messi1: " https://yosintv1.github.io/link/football.html?id=sports5 ",
     messi2: " https://href.li/?https://yosintv.github.io/yosintv/jwplayers.html?src=https://kleanembed.online/embed/sY1bX6cA8rM3wQ7iN9jV2pE5hU0lGf	 ",
-    messi3: " https://yosintv1.github.io/link/football.html?id=sports5 ",
+    messi3: " https://yosintv.github.io/player/player3.html?url=https://nijineh-lalajo.hf.space/watch/aHR0cHM6Ly93aW5kbmV3Lm5ld2tzby5ydS93aW5kL3ByZW1pdW02Ni9tb25vLm0zdTg=.m3u8 ",
 
 
 

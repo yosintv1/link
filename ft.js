@@ -11,6 +11,8 @@ const channels = {
     messi3: " https://href.li/?https://yosintv.github.io/yosintv/jwplayers.html?src=https://kleanembed.online/embed/f6b8907932b6eebc0fc0444177ba71c5 ",
 
 
+    club1: " https://yosintv2.github.io/bkp/plyrr.html?url=https://shls-masr-ak.akamaized.net/out/v1/d5036cabf11e45bf9d0db410ca135c18/index.m3u8	 ", // BYTT
+    club2: " https://yosintv2.github.io/bkp/plyrr.html?url=https://shls-masr2-ak.akamaized.net/out/v1/f683685242b549f48ea8a5171e3e993a/index.m3u8	 ", // BYTT
 
     
 

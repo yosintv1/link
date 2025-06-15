@@ -4,6 +4,8 @@ const channels = {
     nepal: " https://yosintv2.github.io/ads/soco?m=372746 ",
 
 
+    psg: " https://href.li/?https://yosintv.github.io/yosintv/jwplayers.html?src=https://kleanembed.online/embed/4fe75b22cb4f22d2411fb29fb38290f9 ",
+
     
     
     messi1: " https://yosintv1.github.io/link/football.html?id=sports5 ",

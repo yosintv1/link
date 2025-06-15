@@ -7,8 +7,8 @@ const channels = {
     
     
     messi1: " https://yosintv1.github.io/link/football.html?id=sports5 ",
-    messi2: " https://yosintv.github.io/player/dmca.html?url=https://hls.uouetrq19.com/live/hd-en-6MtMdzrtZVMeGCQDfD.m3u8?txSecret=a2c25809f0156d9c2bcb4b1b9bef7490&txTime=684F608E	 ", // BYTT
-    messi3: " https://href.li/?https://yosintv.github.io/yosintv/jwplayers.html?src=https://kleanembed.online/embed/f6b8907932b6eebc0fc0444177ba71c5 ",
+    messi2: " https://href.li/?https://yosintv.github.io/yosintv/jwplayers.html?src=https://kleanembed.online/embed/f6b8907932b6eebc0fc0444177ba71c5 ",
+    messi3: " https://yosintv.github.io/player/dmca.html?url=https://hls.uouetrq19.com/live/hd-en-6MtMdzrtZVMeGCQDfD.m3u8?txSecret=a2c25809f0156d9c2bcb4b1b9bef7490&txTime=684F608E	 ", // BYTT
 
 
     club1: " https://yosintv2.github.io/bkp/plyrr.html?url=https://shls-masr-ak.akamaized.net/out/v1/d5036cabf11e45bf9d0db410ca135c18/index.m3u8	 ", // BYTT

@@ -13,6 +13,7 @@ const channels = {
 
     club1: " https://yosintv2.github.io/bkp/plyrr.html?url=https://shls-masr-ak.akamaized.net/out/v1/d5036cabf11e45bf9d0db410ca135c18/index.m3u8	 ", // BYTT
     club2: " https://yosintv2.github.io/bkp/plyrr.html?url=https://shls-masr2-ak.akamaized.net/out/v1/f683685242b549f48ea8a5171e3e993a/index.m3u8	 ", // BYTT
+    club3: " https://yosintv2.github.io/bkp/plyrr.html?url=https://live-evg1.tv360.bitel.com.pe/bitel/americatv/playlist.m3u8	 ", // BYTT
 
     
 

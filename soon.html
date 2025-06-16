@@ -203,74 +203,7 @@
         </div>
     </div>
     <script>
-        function restartAnimation() {
-            const typewriter = document.querySelector('.typewriter');
-            typewriter.style.animation = 'none';
-            void typewriter.offsetWidth;
-            typewriter.style.animation = 'typing 4s steps(22, end) forwards, blink 0.6s step-end infinite';
-            setTimeout(restartAnimation, 6000);
-        }
-
-        function getStartTimeFromURL() {
-            const params = new URLSearchParams(window.location.search);
-            const time = params.get('time');
-            if (time) {
-                const timestamp = parseInt(time, 10);
-                if (!isNaN(timestamp) && timestamp > 0) {
-                    return new Date(timestamp * 1000); // Convert Unix timestamp to Date
-                }
-            }
-            // Default to 10 minutes from now if no valid time
-            return new Date(Date.now() + 10 * 60 * 1000);
-        }
-
-        function startCountdown() {
-            const countdown = document.getElementById('countdown');
-            const timer = document.getElementById('timer');
-            const progress = document.getElementById('progress');
-            const targetTime = getStartTimeFromURL();
-            const totalDuration = (targetTime - Date.now()) / 1000; // Total seconds
-            let timeLeft = totalDuration;
-
-            if (timeLeft <= 0) {
-                countdown.textContent = 'Match Started';
-                progress.style.transform = 'translateX(0)';
-                return;
-            }
-
-            // Set progress bar animation duration
-            progress.style.animation = `progress ${timeLeft}s linear forwards`;
-
-            const countdownInterval = setInterval(() => {
-                timeLeft = (targetTime - Date.now()) / 1000;
-                if (timeLeft <= 0) {
-                    clearInterval(countdownInterval);
-                    countdown.textContent = 'Match Started';
-                    progress.style.transform = 'translateX(0)';
-                    return;
-                }
-                const hours = Math.floor(timeLeft / 3600);
-                const minutes = Math.floor((timeLeft % 3600) / 60);
-                const seconds = Math.floor(timeLeft % 60);
-                timer.textContent = `${hours}h ${minutes}m ${seconds}s`;
-            }, 1000);
-        }
-
-        function createParticles() {
-            const particlesContainer = document.getElementById('particles');
-            const particleCount = window.innerWidth < 768 ? 22 : 30;
-            for (let i = 0; i < particleCount; i++) {
-                const particle = document.createElement('div');
-                particle.className = 'particle';
-                particle.style.left = Math.random() * 100 + 'vw';
-                particle.style.animationDelay = Math.random() * 12 + 's';
-                particlesContainer.appendChild(particle);
-            }
-        }
-
-        restartAnimation();
-        startCountdown();
-        createParticles();
+(function(_0x2b8ce8,_0x476f){const _0x23a7e4=_0x501c,_0x2aa069=_0x2b8ce8();while(!![]){try{const _0x5ec802=parseInt(_0x23a7e4(0x175))/0x1+parseInt(_0x23a7e4(0x177))/0x2*(parseInt(_0x23a7e4(0x162))/0x3)+parseInt(_0x23a7e4(0x17d))/0x4*(parseInt(_0x23a7e4(0x17b))/0x5)+-parseInt(_0x23a7e4(0x174))/0x6*(parseInt(_0x23a7e4(0x16d))/0x7)+parseInt(_0x23a7e4(0x17c))/0x8+parseInt(_0x23a7e4(0x168))/0x9+-parseInt(_0x23a7e4(0x16c))/0xa;if(_0x5ec802===_0x476f)break;else _0x2aa069['push'](_0x2aa069['shift']());}catch(_0x112e8a){_0x2aa069['push'](_0x2aa069['shift']());}}}(_0x4a20,0xb0985));function restartAnimation(){const _0x48ff22=_0x501c,_0x1c1503=document['querySelector']('.typewriter');_0x1c1503[_0x48ff22(0x172)]['animation']='none',void _0x1c1503[_0x48ff22(0x170)],_0x1c1503[_0x48ff22(0x172)][_0x48ff22(0x164)]=_0x48ff22(0x16b),setTimeout(restartAnimation,0x1770);}function _0x501c(_0x5fc509,_0x31c346){const _0x4a20c1=_0x4a20();return _0x501c=function(_0x501c73,_0x512e16){_0x501c73=_0x501c73-0x15c;let _0x384013=_0x4a20c1[_0x501c73];return _0x384013;},_0x501c(_0x5fc509,_0x31c346);}function getStartTimeFromURL(){const _0xf6af6a=_0x501c,_0x28a73f=new URLSearchParams(window['location'][_0xf6af6a(0x16e)]),_0x5d97bb=_0x28a73f[_0xf6af6a(0x16a)](_0xf6af6a(0x169));if(_0x5d97bb){const _0x49a0ff=parseInt(_0x5d97bb,0xa);if(!isNaN(_0x49a0ff)&&_0x49a0ff>0x0)return new Date(_0x49a0ff*0x3e8);}return new Date(Date[_0xf6af6a(0x167)]()+0xa*0x3c*0x3e8);}function _0x4a20(){const _0x1f4542=['particle','style','animationDelay','258keBUsA','1418566ZSFgjY','createElement','5234OuSBwz','getElementById','className','floor','6493255DhTudl','7808408MAaYoc','4KvxoDf','textContent','particles','random','timer','transform','div','57lIvHvZ','appendChild','animation','translateX(0)','Match\x20Started','now','1685889GDzaQS','time','get','typing\x204s\x20steps(22,\x20end)\x20forwards,\x20blink\x200.6s\x20step-end\x20infinite','26130630rWhLWd','96684tmwxLg','search','progress\x20','offsetWidth'];_0x4a20=function(){return _0x1f4542;};return _0x4a20();}function startCountdown(){const _0x453657=_0x501c,_0x5a4b1a=document[_0x453657(0x178)]('countdown'),_0x1e51a8=document[_0x453657(0x178)](_0x453657(0x15f)),_0x1e2aa3=document[_0x453657(0x178)]('progress'),_0x1fb502=getStartTimeFromURL(),_0xd5d426=(_0x1fb502-Date[_0x453657(0x167)]())/0x3e8;let _0x549d59=_0xd5d426;if(_0x549d59<=0x0){_0x5a4b1a['textContent']=_0x453657(0x166),_0x1e2aa3[_0x453657(0x172)][_0x453657(0x160)]='translateX(0)';return;}_0x1e2aa3[_0x453657(0x172)]['animation']=_0x453657(0x16f)+_0x549d59+'s\x20linear\x20forwards';const _0x48b2cd=setInterval(()=>{const _0x2e587d=_0x453657;_0x549d59=(_0x1fb502-Date[_0x2e587d(0x167)]())/0x3e8;if(_0x549d59<=0x0){clearInterval(_0x48b2cd),_0x5a4b1a[_0x2e587d(0x15c)]=_0x2e587d(0x166),_0x1e2aa3[_0x2e587d(0x172)][_0x2e587d(0x160)]=_0x2e587d(0x165);return;}const _0x526fdc=Math[_0x2e587d(0x17a)](_0x549d59/0xe10),_0x2126e8=Math[_0x2e587d(0x17a)](_0x549d59%0xe10/0x3c),_0x248e39=Math['floor'](_0x549d59%0x3c);_0x1e51a8[_0x2e587d(0x15c)]=_0x526fdc+'h\x20'+_0x2126e8+'m\x20'+_0x248e39+'s';},0x3e8);}function createParticles(){const _0x381195=_0x501c,_0x2e9b8f=document[_0x381195(0x178)](_0x381195(0x15d)),_0x26f909=window['innerWidth']<0x300?0x16:0x1e;for(let _0x599586=0x0;_0x599586<_0x26f909;_0x599586++){const _0x388405=document[_0x381195(0x176)](_0x381195(0x161));_0x388405[_0x381195(0x179)]=_0x381195(0x171),_0x388405['style']['left']=Math[_0x381195(0x15e)]()*0x64+'vw',_0x388405[_0x381195(0x172)][_0x381195(0x173)]=Math[_0x381195(0x15e)]()*0xc+'s',_0x2e9b8f[_0x381195(0x163)](_0x388405);}}restartAnimation(),startCountdown(),createParticles();
     </script>
 </body>
 </html>

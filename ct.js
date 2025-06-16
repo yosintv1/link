@@ -7,8 +7,8 @@ const channels = {
 
     
     
-    nepal1: " https://topembed.pw/channel/ex8051941 ",  
-    nepal2: " https://topembed.pw/channel/ex8051941  ", 
+    nepal1: " https://linnk.pages.dev/soon?time=1750082437  ",  
+    nepal2: " https://linnk.pages.dev/soon?time=1750082437  ", 
     nepal3: " https://topembed.pw/channel/ex8051941  ", 
     
 

@@ -2,7 +2,7 @@ const channels = {
 
     
 
-nepal1: " https://yosintv.github.io/player/dmca.html?url=https://fv1163.huibo.tv/GM/H208/chunks.m3u8?wsSecret=b4942581fd329794d52b560ad864c13d&wsTime=1750087896  ",  
+nepal1: " https://yosintv.github.io/player/dmca.html?url=https://fv1163.huibo.tv/GM/H208/chunks.m3u8?wsSecret=ec826e7e18371c5b30b8c271670c6368&wsTime=1750088434  ",  
 nepal2: " /cricket?id=nepal1  ", 
     
 

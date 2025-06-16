@@ -7,9 +7,9 @@ const channels = {
 
     
     
-    nepal1: " soon?time=1750078803 ",  
-    nepal2: " soon?time=1750078803  ", 
-    nepal3: " soon?time=1750078803  ", 
+    nepal1: " https://topembed.pw/channel/ex8051941 ",  
+    nepal2: " https://topembed.pw/channel/ex8051941  ", 
+    nepal3: " https://topembed.pw/channel/ex8051941  ", 
     
 
 };

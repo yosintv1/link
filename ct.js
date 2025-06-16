@@ -8,7 +8,7 @@ const channels = {
     
     
     nepal1: " https://yosintv.github.io/player/dmca.html?url=https://fv1163.huibo.tv/GM/H208/chunks.m3u8?wsSecret=ecaabea5b7410047cc591084943a9d12&wsTime=1750083897  ",  
-    nepal2: " https://yosintv.github.io/player/player3.html?url=https://1a-1791.com/live/y16rq9u0/slot-99/dh3u-ad4g_1080p/chunklist.m3u8  ", 
+    nepal2: " https://yosintv.github.io/player/dmca.html?url=https://fv1163.huibo.tv/GS/H3105/chunks.m3u8?wsSecret=8d00434947537924e69c615d1d557b96&wsTime=1750083925  ", 
     nepal3: " https://topembed.pw/channel/ex8051941  ", 
     
 

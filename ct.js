@@ -1,14 +1,9 @@
 const channels = {
 
-    test1: " https://href.li/https://yosintv.github.io/yosintv/jwplayers.html?src=https://kleanembed.online/embed/j5ru6icHofROsespidec64w0s7lgo8ot  ",  
-    test2: " https://href.li/https://yosintv.github.io/yosintv/jwplayers.html?src=https://kleanembed.online/embed/j5ru6icHofROsespidec64w0s7lgo8ot  ",  
-    test1: " https://href.li/https://yosintv.github.io/yosintv/jwplayers.html?src=https://kleanembed.online/embed/j5ru6icHofROsespidec64w0s7lgo8ot  ",  
     
 
-    
-    
-    nepal1: " https://yosintv.github.io/player/dmca.html?url=https://fv1163.huibo.tv/GM/H208/chunks.m3u8?wsSecret=b4942581fd329794d52b560ad864c13d&wsTime=1750087896  ",  
-    nepal2: " /cricket?id=nepal1  ", 
+nepal1: " https://yosintv.github.io/player/dmca.html?url=https://fv1163.huibo.tv/GM/H208/chunks.m3u8?wsSecret=b4942581fd329794d52b560ad864c13d&wsTime=1750087896  ",  
+nepal2: " /cricket?id=nepal1  ", 
     
 
 };

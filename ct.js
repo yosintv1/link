@@ -2,7 +2,7 @@ const channels = {
 
     
 
-nepal1: " https://yosintv.github.io/player/dmca.html?url=https://yosintv.github.io/yosintv/jwplayers.html?src=https://nirutv.online/link.html?id=nepal1  ",  
+nepal1: "https://yosintv.github.io/yosintv/jwplayers.html?src=https://nirutv.online/link.html?id=nepal1  ",  
 nepal2: " /cricket?id=nepal1  ", 
     
 

@@ -1,7 +1,7 @@
     const streamMap = {
       "sky": {
         url: " https://fv1163.huibo.tv/GPA/H914/chunks.m3u8?wsSecret=7ecaa7711b2bc5d91d46ccc428dbd11a&wsTime=1750174553 ",
-        poster: "https://i.ibb.co/MyvXYC4Z/IMG-20250610-214129.jpg"
+        poster: " https://images.fancode.com/skillup-uploads/cms-media/127628_5263_SCO_NEP_fc-Web.png?hash=eyJrZXkiOiJza2lsbHVwLXVwbG9hZHMvY21zLW1lZGlhLzEyNzYyOF81MjYzX1NDT19ORVBfZmMtV2ViLnBuZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJmaXQiOiJjb3ZlciIsInBvc2l0aW9uIjoidG9wIiwid2lkdGgiOjU4MCwiaGVpZ2h0IjoyNDB9LCJ3ZWJwIjp7InF1YWxpdHkiOjYwLCJsb3NzbGVzcyI6ZmFsc2V9fSwib3V0cHV0Rm9ybWF0Ijoid2VicCJ9 "
       },
       "f1": {
         url: "https://d2sshbxprtwbjg.cloudfront.net/out/v1/5a00690119224df688a7c3d2e9c7022f/index.m3u8",

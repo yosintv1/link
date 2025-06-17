@@ -3,7 +3,7 @@ const channels = {
     
 
 nepal1: " https://linnk.pages.dev/soon?time=1750168806  ",  
-nepal2: " https://linnk.pages.dev/soon?time=1750168806 ", 
+nepal2: " https://topembed.pw/channel/WillowXtra[USA] ", 
     
 
 };

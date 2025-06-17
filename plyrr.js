@@ -1,6 +1,6 @@
     const streamMap = {
       "sky": {
-        url: "https://nijineh-lalajo.hf.space/proxy?url=https://dokko1new.newkso.ru/dokko1/premium65/mono.m3u8",
+        url: "https://mi9hodru2lnlspaswl8regarijequchiy.happy-ending.site/V7fi53ovudaDRADa7RaSW5DrEVajAc1s.m3u8",
         poster: "https://i.ibb.co/MyvXYC4Z/IMG-20250610-214129.jpg"
       },
       "f1": {

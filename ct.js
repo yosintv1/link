@@ -2,8 +2,8 @@ const channels = {
 
     
 
-nepal1: " https://linnk.pages.dev/soon?time=1750168806  ",  
-nepal2: " https://topembed.pw/channel/WillowXtra[USA] ", 
+nepal1: " https://yosintv.github.io/player/player3.html?url=https://1a-1791.com/live/t5qc33px/slot-35/gikc-hoy6_1080p/chunklist.m3u8 ",  
+nepal2: " https://yosintv.github.io/player/player3.html?url=https://1a-1791.com/live/t5qc33px/slot-35/gikc-hoy6_1080p/chunklist.m3u8 ", 
     
 
 };

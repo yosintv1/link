@@ -1,6 +1,6 @@
     const streamMap = {
       "sky": {
-        url: "https://mi9hodru2lnlspaswl8regarijequchiy.happy-ending.site/V7fi53ovudaDRADa7RaSW5DrEVajAc1s.m3u8",
+        url: " https://fv1163.huibo.tv/GPA/H914/chunks.m3u8?wsSecret=7ecaa7711b2bc5d91d46ccc428dbd11a&wsTime=1750174553 ",
         poster: "https://i.ibb.co/MyvXYC4Z/IMG-20250610-214129.jpg"
       },
       "f1": {

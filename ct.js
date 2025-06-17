@@ -2,8 +2,8 @@ const channels = {
 
     
 
-nepal1: "https://yosintv.github.io/yosintv/jwplayers.html?src=https://nirutv.online/link.html?id=nepal1  ",  
-nepal2: " /cricket?id=nepal1  ", 
+nepal1: " https://linnk.pages.dev/soon?time=1750168806  ",  
+nepal2: " https://linnk.pages.dev/soon?time=1750168806 ", 
     
 
 };

@@ -2,8 +2,8 @@ const channels = {
 
     
 
-nepal1: " https://linnk.pages.dev/cricket?id=nepal2  ",  
-nepal2: " https://nirutv.online/link.html?id=nepal  ", 
+nepal1: " https://yosintv.github.io/yosintv/jwplayers.html?src=https://nirutv.online/link.html?id=nepal  ",  
+nepal2: " https://yosintv.github.io/yosintv/jwplayers.html?src=https://nirutv.online/link.html?id=nepal  ", 
 nepal3: " https://sportslivehub01.live/en-BD/stream/19001984 ", 
 
 };

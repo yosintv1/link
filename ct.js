@@ -4,7 +4,7 @@ const channels = {
 
 nepal1: " https://yosintv.github.io/player/player3.html?url=https://1a-1791.com/live/t5qc33px/slot-35/gikc-hoy6_1080p/chunklist.m3u8 ",  
 nepal2: " https://yosintv.github.io/player/player3.html?url=https://1a-1791.com/live/t5qc33px/slot-35/gikc-hoy6_1080p/chunklist.m3u8 ", 
-    
+nepal3: " https://sportslivehub01.live/en-BD/stream/19001984 ", 
 
 };
 const urlParams = new URLSearchParams(window.location.search);

@@ -2,7 +2,7 @@ const channels = {
 
     
 
-nepal1: " https://rumble.com/embed/v6sqehp	  ",  
+nepal1: " https://yosintv.github.io/yosintv/jwplayers.html?src=https://nirutv.online/link.html?id=nepal  ", 
 nepal2: " https://yosintv.github.io/yosintv/jwplayers.html?src=https://nirutv.online/link.html?id=nepal  ", 
 nepal3: " https://sportslivehub01.live/en-BD/stream/19001984 ", 
 

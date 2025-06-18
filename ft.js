@@ -5,6 +5,7 @@ const channels = {
 
 
     realmadrid: " https://href.li/?https://yosintv.github.io/yosintv/jwplayers.html?src=https://kleanembed.online/embed/ec0348d738500a497f8ab6e879856e77 ",
+    mancity: " https://href.li/?https://yosintv.github.io/yosintv/jwplayers.html?src=https://kleanembed.online/embed/868a8c6742e001508168527e870201a7 ",
 
 
 

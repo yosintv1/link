@@ -4,14 +4,14 @@ const channels = {
     nepal: " https://yosintv2.github.io/ads/soco?m=372746 ",
 
 
-    chelsea: " https://href.li/?https://yosintv.github.io/yosintv/jwplayers.html?src=https://kleanembed.online/embed/c4e45ea782621425e27bd3ed4260f08c ",
+    realmadrid: " https://href.li/?https://yosintv.github.io/yosintv/jwplayers.html?src=https://kleanembed.online/embed/ec0348d738500a497f8ab6e879856e77 ",
 
 
 
     club: " https://yosintv1.github.io/link/football.html?id=sports5 ", // 5 Sports
     club1: " https://yosintv2.github.io/bkp/plyrr.html?url=https://shls-masr-ak.akamaized.net/out/v1/d5036cabf11e45bf9d0db410ca135c18/index.m3u8	 ", // masrtv2
     club2: " https://yosintv2.github.io/bkp/plyrr.html?url=https://shls-masr2-ak.akamaized.net/out/v1/f683685242b549f48ea8a5171e3e993a/index.m3u8	 ", // masrtv2
-    club3: " https://yosintv2.github.io/bkp/plyrr.html?url=https://live-evg1.tv360.bitel.com.pe/bitel/americatv/playlist.m3u8	 ", // americatv
+    amtv: " https://yosintv2.github.io/bkp/plyrr.html?url=https://live-evg1.tv360.bitel.com.pe/bitel/americatv/playlist.m3u8	 ", // americatv
 
     
 

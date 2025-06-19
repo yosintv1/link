@@ -2,7 +2,7 @@ const channels = {
 
     
 
-nepal1: " https://linnk.pages.dev/soon?time=1750341612 ", 
+nepal1: " https://yosintv2.github.io/bkp/plyrr.html?url=https://rumble.com/live-hls-dvr/6stsqx/playlist.m3u8 ", 
 nepal2: " https://linnk.pages.dev/soon?time=1750341612 ", 
 nepal3: " https://sportslivehub01.live/en-BD/stream/19001984 ", 
 

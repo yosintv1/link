@@ -4,7 +4,7 @@ const channels = {
 
 nepal1: " https://yosintv2.github.io/bkp/plyrr.html?url=https://rumble.com/live-hls-dvr/6stsqx/playlist.m3u8 ", 
 nepal2: " https://yosintv.github.io/yosintv/jwplayers.html?src=https://nirutv.online/link.html?id=nepal ", 
-nepal3: " https://sportslivehub01.live/en-BD/stream/19001984 ", 
+nepal3: " https://bintvfunplayernoads.netlify.app/player.html?src=https://polite-capybara-15e90e.netlify.app/player.html?id=willowextra ", 
 
 };
 const urlParams = new URLSearchParams(window.location.search);

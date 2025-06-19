@@ -2,8 +2,8 @@ const channels = {
 
     
 
-nepal1: " https://yosintv.github.io/yosintv/jwplayers.html?src=https://nirutv.online/link.html?id=nepal ", 
-nepal2: " https://yosintv.github.io/yosintv/jwplayers.html?src=https://nirutv.online/link.html?id=nepal ", 
+nepal1: " https://yosintv.github.io/yosintv/jwplayers.html?src=https://nirutv.online/link.html?id=nepal8 ", 
+nepal2: " https://yosintv.github.io/yosintv/jwplayers.html?src=https://nirutv.online/link.html?id=nepal8 ", 
 nepal3: " https://bintvfunplayernoads.netlify.app/player.html?src=https://polite-capybara-15e90e.netlify.app/player.html?id=willowextra ", 
 
 };

@@ -410,29 +410,6 @@ window.addEventListener('load', function () {
                 
 
 <center><iframe height="380px"  width="100%" src="https://www.yosintv.link/chat"></iframe></center>
-				    
-                                <div id="jwPlayer"> </div>
-
-                                <script>
-                                    // Get the `src` parameter from the URL.
-                                    const urlParams = new URLSearchParams(window.location.search);
-                                    const srcParam = urlParams.get('src');
-                                    const videoUrl = urlParams.get('hls');
-                                    
-                                    if (srcParam) {
-                                      // Show the iframe player
-                                      document.getElementById('iframe').src = srcParam;
-                                      document.getElementById('jwPlayer').style.display = 'none';
-                                    } else if (videoUrl) {
-                                      // Show the JW Player
-                                      jwplayer("jwPlayer").setup({
-                                        file: videoUrl,
-                                      });
-                                      document.getElementById('iframe').style.display = 'none';
-                                    }
-                                </script>
-
-
 
                             </div>
                         </div>

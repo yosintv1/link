@@ -15,6 +15,45 @@
     </script>
 
 <style>
+
+	.top-live-stream-section {
+  width: 100%;
+  background-color: #292929;
+  margin: 0;
+  padding: 0;
+  position: -webkit-sticky;
+  position: sticky;
+  top: var(--menu-height);
+  z-index: 1000;
+}
+
+.top-stream-wrapper-modifier {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+.video-iframe-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+  height: 0;
+  background-color: var(--video-player-background-color);
+  border: none;
+  border-radius: 0px;
+  overflow: hidden;
+}
+
+.video-iframe-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
 #videoOverlayImageTopRightIndex {
   position: absolute;
   top: 15px;
@@ -27,41 +66,6 @@
   border-radius: 5px;
 }
 
-  
-  #adblock-popup {
-    display: none;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    max-width: 320px;
-    width: 90%;
-    transform: translate(-50%, -50%);
-    background-color: #ffffff;
-    color: #000000;
-    padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0 0 25px rgba(0,0,0,0.5);
-    text-align: center;
-    z-index: 99999;
-    font-family: Arial, sans-serif;
-  }
-  #adblock-popup h3 {
-    margin-bottom: 10px;
-    font-size: 20px;
-  }
-  #adblock-popup p {
-    font-size: 15px;
-    margin-bottom: 0;
-  }
-  #popup-overlay {
-    display: none;
-    position: fixed;
-    top: 0; left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.6);
-    z-index: 99998;
-  }
 </style>
 
 <div class='adsbygoogle' id='adsbox' style='height:1px;width:1px;position:absolute;left:-9999px;'></div>

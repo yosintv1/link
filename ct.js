@@ -6,8 +6,8 @@ willow: " https://yosintv.github.io/yosintv/jwplayers.html?src=https://kleanembe
 
 
     
-nepal1: " https://yosintv.github.io/player/player3.html?url=https://back.liveboxpro.com/proxy_this/1251.m3u8 ", 
-nepal2: " https://yosintv.github.io/yosintv/jwplayers.html?src=https://nirutv.online/link.html?id=nepal8 ", 
+nepal2: " https://yosintv.github.io/player/player3.html?url=https://back.liveboxpro.com/proxy_this/1251.m3u8 ", 
+nepal1: " https://yosintv.github.io/yosintv/jwplayers.html?src=https://nirutv.online/link.html?id=nepal ", 
 nepal3: " https://bintvfunplayernoads.netlify.app/player.html?src=https://polite-capybara-15e90e.netlify.app/player.html?id=willowextra ", 
 
 };

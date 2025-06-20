@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>YoSinTV: Live Sports Streaming</title>
+    <link rel="icon" href="favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Playfair+Display:wght@500&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script type="application/ld+json">
+        {
+            "@context": "http://schema.org/",
+            "@type": "WebSite",
+            "name": "YoSinTV",
+            "alternateName": "YoSinTV",
+            "url": "https://www.example.com/"
+        }
+    </script>
+</head>
+<body class="theme-light">
+    <header class="header">
+        <div class="container">
+            <div class="logo">YoSinTV</div>
+            <button class="mode-toggle" onclick="rdmode()"> Dark Mode</button>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="player-section">
+            <div class="player-container">
+                <div class="share-section">
+                    <h3 class="share-title">Share This Live Stream</h3>
+                    <div class="share-container">
+                        <div id="shareLinkBox">Generating shortened link...</div>
+                        <button class="share-button" onclick="copyToClipboard()">
+                            <span class="button-text">Copy Link</span>
+                        </button>
+                    </div>
+                    <div class="social-share">
+                        <a href="#" class="social-icon facebook" onclick="shareTo('facebook')"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon whatsapp" onclick="shareTo('whatsapp')"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#" class="social-icon instagram" onclick="shareTo('instagram')"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon twitter" onclick="shareTo('twitter')"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon telegram" onclick="shareTo('telegram')"><i class="fab fa-telegram-plane"></i></a>
+                        <a href="#" class="social-icon messenger" onclick="shareTo('messenger')"><i class="fab fa-facebook-messenger"></i></a>
+                    </div>
+                </div>
+                <div class="disclaimer">
+                    <span class="disclaimer-text">Skip 1-2 Ads | Watch Peacefully</span>
+                </div>
+                <iframe id="iframe" allow="encrypted-media" allowfullscreen="true" frameborder="0" height="500" width="100%"></iframe>
+                <div id="jwPlayer" style="display: none;"></div>
+            </div>
+            <div class="chat-section">
+                <iframe height="300" width="100%" src="https://www.yosintv.link/chat"></iframe>
+            </div>
+        </section>
+
+        <section class="dmca-section">
+            <h2>YoSinTV - DMCA</h2>
+            <p>YoSinTV does not host any media content on its own site. Our site visitors may use external or third-party services to show content. We notify all copyright owners that the links and media shared by visitors are hosted elsewhere on the web or embedded from various sites.</p>
+            <h3>What is YoSinTV?</h3>
+            <p>YoSinTV is a sports streaming platform covering Cricket Matches, World Cup, International/Domestic Matches, Football Matches, and more.</p>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <ul class="footer-links">
+                <li><a href="/"> Home</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/contact">Contact</a></li>
+            </ul>
+            <p>© 2025 YoSinTV. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jwplayer.com/libraries/8qM9U1qW.js"></script>
+    <script src="script.js"></script>
+    
+       <!-- BEGIN: Powered by Supercounters.com -->
+        <div style="position:fixed;top:0;left:0;width:100%;height:1px;overflow:hidden;visibility:hidden;z-index:9999;">
+            <script type="text/javascript" src="//widget.supercounters.com/ssl/online_i.js"></script>
+            <script type="text/javascript"> sc_online_i(1687371,"ffffff","ffffff"); </script>
+            <noscript><a href="https://www.supercounters.com/" style="visibility:hidden;">free online counter</a></noscript>
+        </div>
+        
+        
+</body>
+</html>

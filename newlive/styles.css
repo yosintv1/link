@@ -1,0 +1,448 @@
+:root {
+    --primary-color: #1e88e5;
+    --secondary-color: #ffffff;
+    --text-color: #333333;
+    --background-color: #f5f7fa;
+    --dark-primary: #1565c0;
+    --dark-bg: #1a1a1a;
+    --dark-text: #e0e0e0;
+    --border-radius: 6px;
+    --shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    --font-family: 'Roboto', sans-serif;
+    --title-font: 'Playfair Display', serif;
+    --highlight-bg: #ffe082;
+    --highlight-text: #5a3e00;
+    --button-bg: #2e7d32;
+    --button-hover: #1b5e20;
+    --facebook-bg: #3b5998;
+    --whatsapp-bg: #25d366;
+    --instagram-bg: #e1306c;
+    --twitter-bg: #1da1f2;
+    --telegram-bg: #0088cc;
+    --messenger-bg: #0078ff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-family);
+    background: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.header {
+    background: var(--primary-color);
+    padding: 15px 0;
+    box-shadow: var(--shadow);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-family: var(--title-font);
+    font-size: 28px;
+    font-weight: 500;
+    color: var(--secondary-color);
+}
+
+.mode-toggle {
+    padding: 8px 16px;
+    border: none;
+    border-radius: var(--border-radius);
+    background: var(--dark-primary);
+    color: var(--secondary-color);
+    font-family: var(--font-family);
+    font-weight: 500;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.3s;
+}
+
+.mode-toggle:hover {
+    background: #0d47a1;
+    transform: scale(1.05);
+}
+
+.player-section {
+    margin: 20px 0;
+    background: var(--secondary-color);
+    border-radius: var(--border-radius);
+    padding: 20px;
+    box-shadow: var(--shadow);
+}
+
+.player-container {
+    position: relative;
+}
+
+iframe {
+    border-radius: var(--border-radius);
+    width: 100%;
+    max-width: 100%;
+}
+
+.disclaimer {
+    text-align: center;
+    margin: 15px 0;
+    padding: 12px 20px;
+    background: var(--highlight-bg);
+    color: var(--highlight-text);
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    animation: pulse 1.5s ease-in-out infinite alternate;
+}
+
+.disclaimer-text {
+    font-weight: 700;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    100% { transform: scale(1.03); }
+}
+
+.share-section {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.share-title {
+    font-family: var(--title-font);
+    font-size: 24px;
+    font-weight: 500;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+    letter-spacing: 0.5px;
+}
+
+.share-container {
+    display: flex;
+    align-items: center;
+    background: var(--secondary-color);
+    border: 1px solid #e0e0e0;
+    border-radius: var(--border-radius);
+    padding: 12px;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    transition: background-color 0.3s;
+}
+
+#shareLinkBox {
+    flex: 1;
+    text-align: left;
+    word-break: break-word;
+    font-family: var(--font-family);
+    font-size: 14px;
+    padding: 10px 12px;
+    color: var(--text-color);
+    background: #f9f9f9;
+    border-radius: 4px;
+    margin-right: 12px;
+}
+
+.share-button {
+    padding: 10px 24px;
+    border: none;
+    border-radius: var(--border-radius);
+    background: var(--button-bg);
+    color: var(--secondary-color);
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s, box-shadow 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 120px;
+}
+
+.share-button:hover {
+    background: var(--button-hover);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.button-text {
+    display: inline-block;
+}
+
+.social-share {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 15px;
+}
+
+.social-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: var(--secondary-color);
+    text-decoration: none;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.social-icon:hover {
+    transform: scale(1.1);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.social-icon i {
+    font-size: 20px;
+}
+
+.social-icon.facebook {
+    background: var(--facebook-bg);
+}
+
+.social-icon.whatsapp {
+    background: var(--whatsapp-bg);
+}
+
+.social-icon.instagram {
+    background: var(--instagram-bg);
+}
+
+.social-icon.twitter {
+    background: var(--twitter-bg);
+}
+
+.social-icon.telegram {
+    background: var(--telegram-bg);
+}
+
+.social-icon.messenger {
+    background: var(--messenger-bg);
+}
+
+.chat-section {
+    margin-top: 20px;
+}
+
+.chat-section iframe {
+    border-radius: var(--border-radius);
+}
+
+.dmca-section {
+    background: var(--secondary-color);
+    padding: 20px;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    margin-bottom: 20px;
+}
+
+.dmca-section h2 {
+    font-family: var(--title-font);
+    font-size: 26px;
+    margin-bottom: 15px;
+    color: var(--primary-color);
+}
+
+.dmca-section h3 {
+    font-size: 20px;
+    margin: 20px 0 10px;
+}
+
+.dmca-section p {
+    margin-bottom: 15px;
+}
+
+.footer {
+    background: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 20px 0;
+}
+
+.footer .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-links {
+    display: flex;
+    list-style: none;
+}
+
+.footer-links li {
+    margin-right: 20px;
+}
+
+.footer-links a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+body.theme-dark {
+    background: var(--dark-bg);
+    color: var(--dark-text);
+}
+
+.theme-dark .header,
+.theme-dark .footer {
+    background: #0d47a1;
+}
+
+.theme-dark .player-section,
+.theme-dark .dmca-section {
+    background: #263545;
+}
+
+.theme-dark .disclaimer {
+    background: #5a3e00;
+    color: #ffe082;
+}
+
+.theme-dark .share-title {
+    color: #64b5f6;
+}
+
+.theme-dark .share-container {
+    background: #263545;
+    border-color: #444;
+}
+
+.theme-dark #shareLinkBox {
+    background: #333;
+    color: var(--dark-text);
+}
+
+.theme-dark .share-button {
+    background: #388e3c;
+}
+
+.theme-dark .share-button:hover {
+    background: #2e7d32;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 0 15px;
+    }
+
+    .player-section {
+        padding: 15px;
+    }
+
+    .disclaimer {
+        padding: 10px;
+    }
+
+    .disclaimer-text {
+        font-size: 16px;
+    }
+
+    .share-container {
+        flex-direction: column;
+        gap: 12px;
+        padding: 10px;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    #shareLinkBox {
+        margin-right: 0;
+        text-align: center;
+        padding: 8px;
+    }
+
+    .share-button {
+        width: 100%;
+        max-width: 250px;
+        padding: 12px;
+    }
+
+    .social-share {
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+
+    .social-icon {
+        width: 36px;
+        height: 36px;
+    }
+
+    .social-icon i {
+        font-size: 18px;
+    }
+
+    .share-title {
+        font-size: 20px;
+    }
+
+    .footer .container {
+        flex-direction: column;
+        text-align: center;
+        gap: 12px;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .footer-links li {
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .disclaimer-text {
+        font-size: 14px;
+    }
+
+    .share-title {
+        font-size: 18px;
+    }
+
+    .share-button {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .social-icon {
+        width: 32px;
+        height: 32px;
+    }
+
+    .social-icon i {
+        font-size: 16px;
+    }
+
+    .logo {
+        font-size: 24px;
+    }
+}

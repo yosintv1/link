@@ -17,7 +17,7 @@
 <style>
 .top-live-stream-section {
   width: 100%;
-  height: 100vh; /* Full viewport height */
+  min-height: 100vh; /* Minimum height to fill viewport */
   margin: 0;
   padding: 0;
   position: relative; /* Positioning context */
@@ -29,7 +29,7 @@
 
 .top-stream-wrapper-modifier {
   width: 100%;
-  height: 100%; /* Fill parent height */
+  min-height: 100%; /* Fill parent height */
   padding: 0 !important;
   flex-grow: 1; /* Expand to fill available space */
 }
@@ -37,7 +37,7 @@
 .video-iframe-container {
   position: relative;
   width: 100%;
-  height: 100%; /* Fill entire parent height */
+  min-height: 100%; /* Fill entire parent height */
   overflow: hidden;
 }
 
@@ -46,10 +46,10 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%; /* Ensure full height */
+  min-height: 100%; /* Ensure full height */
   border: none;
   display: block; /* Remove default spacing */
-  object-fit: fill; /* Force content to fill container, overriding aspect ratio if needed */
+  object-fit: cover; /* Maintain aspect ratio while filling container */
 }
 
 /* Overlay image styling */
@@ -66,21 +66,19 @@
   border-radius: 5px;
 }
 
-/* Responsive adjustments */
+/* Responsive adjustments for all devices */
 @media screen and (max-width: 768px) {
   .top-live-stream-section {
-    height: auto; /* Allow height to adjust based on content */
-    min-height: 50vh; /* Minimum height for mobile */
+    min-height: 50vh; /* Adjust for smaller screens */
   }
 
   .video-iframe-container {
-    padding-bottom: 56.25%; /* Reintroduce aspect ratio for mobile */
-    height: 0; /* Collapse height for aspect ratio */
+    padding-bottom: 56.25%; /* Maintain 16:9 aspect ratio */
+    min-height: 0; /* Collapse height for aspect ratio */
   }
 
   .video-iframe-container iframe {
     height: 100%; /* Ensure iframe fills container */
-    object-fit: cover; /* Maintain aspect ratio on mobile */
   }
 
   #videoOverlayImageTopRightIndex {
@@ -112,9 +110,14 @@ html, body {
   margin: 0;
   padding: 0;
   width: 100%;
-  height: 100%;
-  overflow-x: hidden; /* Prevent horizontal scroll
+  min-height: 100%;
+  overflow-x: hidden; /* Prevent horizontal scrollbars */
+}
 
+/* Hide or reposition content below iframe */
+.top-live-stream-section + * {
+  display: none; /* Hide content below to eliminate gaps */
+}
 
 	
 	

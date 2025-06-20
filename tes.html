@@ -17,24 +17,27 @@
 <style>
 .top-live-stream-section {
   width: 100%;
-  background-color: #292929; /* Fallback background color */
+  height: 100vh; /* Full viewport height to ensure no gaps */
   margin: 0;
   padding: 0;
-  position: relative; /* Ensure proper positioning context */
-  z-index: 100000; /* Higher than popup-overlay (99998) */
-  overflow: hidden; /* Prevent any overflow causing gaps */
+  position: relative; /* Positioning context for iframe */
+  z-index: 100000; /* Above AdBlock popup (z-index: 99998) */
+  overflow: hidden; /* Prevent any overflow showing background */
+  display: flex; /* Use flex to make iframe stretch */
+  flex-direction: column;
 }
 
 .top-stream-wrapper-modifier {
   width: 100%;
+  height: 100%; /* Ensure wrapper fills parent */
   padding: 0 !important;
+  flex-grow: 1; /* Allow wrapper to expand */
 }
 
 .video-iframe-container {
   position: relative;
   width: 100%;
-  padding-bottom: 56.25%; /* Maintain 16:9 aspect ratio */
-  height: 0; /* Collapse height to let padding-bottom control aspect ratio */
+  height: 100%; /* Fill entire parent height */
   overflow: hidden;
 }
 
@@ -45,7 +48,8 @@
   width: 100%;
   height: 100%;
   border: none;
-  display: block; /* Ensure no extra spacing */
+  display: block; /* Remove any default spacing */
+  object-fit: cover; /* Ensure iframe content scales to cover container */
 }
 
 #videoOverlayImageTopRightIndex {
@@ -61,8 +65,18 @@
   border-radius: 5px;
 }
 
-/* Ensure responsiveness for overlay image on smaller screens */
-@media screen and (max-width: 600px) {
+/* Responsive adjustments for smaller screens */
+@media screen and (max-width: 768px) {
+  .top-live-stream-section {
+    height: auto; /* Allow height to adjust based on content */
+    min-height: 50vh; /* Minimum height for smaller screens */
+  }
+
+  .video-iframe-container {
+    padding-bottom: 56.25%; /* Reintroduce aspect ratio for mobile */
+    height: 0; /* Collapse height for aspect ratio */
+  }
+
   #videoOverlayImageTopRightIndex {
     max-width: 150px;
     max-height: 50px;
@@ -71,17 +85,30 @@
   }
 }
 
-/* Override container constraints for the video section */
+/* Extra small screens (e.g., mobile portrait) */
+@media screen and (max-width: 480px) {
+  #videoOverlayImageTopRightIndex {
+    max-width: 100px;
+    max-height: 40px;
+    top: 8px;
+    right: 8px;
+  }
+}
+
+/* Override container constraints */
 .top-live-stream-section .container {
   max-width: 100% !important;
   padding: 0 !important;
+  margin: 0 !important;
 }
 
-/* Ensure the iframe fills the viewport height on smaller screens */
-@media screen and (max-width: 768px) {
-  .top-live-stream-section {
-    min-height: 50vh; /* Adjust for smaller screens to avoid excessive height */
-  }
+/* Ensure body and html have no margins or padding */
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden; /* Prevent horizontal scrollbars */
 }
 
 

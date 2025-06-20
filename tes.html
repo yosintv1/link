@@ -17,21 +17,21 @@
 <style>
 .top-live-stream-section {
   width: 100%;
-  height: 100vh; /* Full viewport height to ensure no gaps */
+  height: 100vh; /* Full viewport height */
   margin: 0;
   padding: 0;
-  position: relative; /* Positioning context for iframe */
+  position: relative; /* Positioning context */
   z-index: 100000; /* Above AdBlock popup (z-index: 99998) */
-  overflow: hidden; /* Prevent any overflow showing background */
-  display: flex; /* Use flex to make iframe stretch */
+  overflow: hidden; /* Prevent gaps from overflow */
+  display: flex;
   flex-direction: column;
 }
 
 .top-stream-wrapper-modifier {
   width: 100%;
-  height: 100%; /* Ensure wrapper fills parent */
+  height: 100%; /* Fill parent height */
   padding: 0 !important;
-  flex-grow: 1; /* Allow wrapper to expand */
+  flex-grow: 1; /* Expand to fill available space */
 }
 
 .video-iframe-container {
@@ -46,12 +46,13 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 100%; /* Ensure full height */
   border: none;
-  display: block; /* Remove any default spacing */
-  object-fit: cover; /* Ensure iframe content scales to cover container */
+  display: block; /* Remove default spacing */
+  object-fit: fill; /* Force content to fill container, overriding aspect ratio if needed */
 }
 
+/* Overlay image styling */
 #videoOverlayImageTopRightIndex {
   position: absolute;
   top: 15px;
@@ -65,16 +66,21 @@
   border-radius: 5px;
 }
 
-/* Responsive adjustments for smaller screens */
+/* Responsive adjustments */
 @media screen and (max-width: 768px) {
   .top-live-stream-section {
     height: auto; /* Allow height to adjust based on content */
-    min-height: 50vh; /* Minimum height for smaller screens */
+    min-height: 50vh; /* Minimum height for mobile */
   }
 
   .video-iframe-container {
     padding-bottom: 56.25%; /* Reintroduce aspect ratio for mobile */
     height: 0; /* Collapse height for aspect ratio */
+  }
+
+  .video-iframe-container iframe {
+    height: 100%; /* Ensure iframe fills container */
+    object-fit: cover; /* Maintain aspect ratio on mobile */
   }
 
   #videoOverlayImageTopRightIndex {
@@ -85,7 +91,6 @@
   }
 }
 
-/* Extra small screens (e.g., mobile portrait) */
 @media screen and (max-width: 480px) {
   #videoOverlayImageTopRightIndex {
     max-width: 100px;
@@ -108,14 +113,10 @@ html, body {
   padding: 0;
   width: 100%;
   height: 100%;
-  overflow-x: hidden; /* Prevent horizontal scrollbars */
-}
+  overflow-x: hidden; /* Prevent horizontal scroll
 
 
-
-
-
-
+	
 	
 #adblock-popup {
     display: none;

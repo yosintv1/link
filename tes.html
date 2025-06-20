@@ -66,6 +66,47 @@
   border-radius: 5px;
 }
 
+
+
+
+
+
+	
+#adblock-popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    max-width: 320px;
+    width: 90%;
+    transform: translate(-50%, -50%);
+    background-color: #ffffff;
+    color: #000000;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 25px rgba(0,0,0,0.5);
+    text-align: center;
+    z-index: 99999;
+    font-family: Arial, sans-serif;
+  }
+  #adblock-popup h3 {
+    margin-bottom: 10px;
+    font-size: 20px;
+  }
+  #adblock-popup p {
+    font-size: 15px;
+    margin-bottom: 0;
+  }
+  #popup-overlay {
+    display: none;
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 99998;
+  }
+	
 </style>
 
 <div class='adsbygoogle' id='adsbox' style='height:1px;width:1px;position:absolute;left:-9999px;'></div>

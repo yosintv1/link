@@ -18,7 +18,7 @@
 
 .top-live-stream-section {
   width: 100%;
-  min-height: 100vh; /* Ensure it takes at least the full viewport height */
+  height: 100vh; /* Ensure it takes at least the full viewport height */
   background-color: #292929;
   margin: 0;
   padding: 0;
@@ -401,15 +401,34 @@ window.addEventListener('load', function () {
 
                               
   <div class="top-live-stream-section">
+    <div class="site-wrapper-embed top-stream-wrapper-modifier">
       <div class="video-iframe-container">
         <iframe id="iframe" frameborder="0" allow="autoplay; encrypted-media; fullscreen" allowfullscreen title="Live Sports Stream"></iframe>
         <img src="https://web.cricfoot.net/logo.png" alt="E2Live" id="videoOverlayImageTopRightIndex">	      
     </div>
+    </div>
   </div>
-                              
-                
-
+                        
 <center><iframe height="380px"  width="100%" src="https://www.yosintv.link/chat"></iframe></center>
+                                <div id="jwPlayer"> </div>
+
+                                <script>
+                                    // Get the `src` parameter from the URL.
+                                    const urlParams = new URLSearchParams(window.location.search);
+                                    const srcParam = urlParams.get('src');
+                                    
+                                    if (srcParam) {
+                                      // Show the iframe player
+                                      document.getElementById('iframe').src = srcParam;
+                                      document.getElementById('jwPlayer').style.display = 'none';
+                                    } else if (videoUrl) {
+                                      // Show the JW Player
+                                      jwplayer("jwPlayer").setup({
+                                        file: videoUrl,
+                                      });
+                                      document.getElementById('iframe').style.display = 'none';
+                                    }
+                                </script>
 
                             </div>
                         </div>

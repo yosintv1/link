@@ -107,7 +107,6 @@ iframe {
     color: var(--highlight-text);
     border-radius: 6px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    animation: pulse 1.5s ease-in-out infinite alternate;
 }
 
 .disclaimer-text {

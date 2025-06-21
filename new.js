@@ -200,7 +200,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 chatButton.innerHTML = '<i class="fas fa-comment"></i> Add Comment';
             } else {
                 chatSection.style.display = 'block';
-                chatIframe.src = 'https://www.example.com/chat'; // Load chat
+                chatIframe.src = 'https://www.yosintv.link/chat'; // Load chat
                 chatButton.innerHTML = '<i class="fas fa-comment-slash"></i> Hide Comment';
             }
         } catch (error) {

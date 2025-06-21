@@ -1,21 +1,3 @@
-// Domain restriction check
-(function() {
-  const allowedDomains = ['watch.yosintvlive.com', 'yosintvlive.com']; // Added 'localhost' for testing
-  const currentDomain = window.location.hostname.toLowerCase().split(':')[0]; // Normalize domain, remove port
-
-  if (!allowedDomains.includes(currentDomain)) {
-    // Redirect to the main allowed domain
-    window.location.replace('https://www.yosin-tv.net/');
-  } else {
-    // Allowed domain - place your code here
-    console.log('Domain allowed:', currentDomain);
-    // Your main code logic can go here
-  }
-})();
-
-
-
-
 // Apply initial theme immediately
 (function initializeTheme() {
     const mode = localStorage.getItem('mode') || 'light';
@@ -218,7 +200,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 chatButton.innerHTML = '<i class="fas fa-comment"></i> Add Comment';
             } else {
                 chatSection.style.display = 'block';
-                chatIframe.src = 'https://www.example.com/chat'; // Load chat
+                chatIframe.src = 'https://www.yosintv.link/chat'; // Load chat
                 chatButton.innerHTML = '<i class="fas fa-comment-slash"></i> Hide Comment';
             }
         } catch (error) {
@@ -264,3 +246,18 @@ document.addEventListener('DOMContentLoaded', function() {
     window.copyToClipboard = copyToClipboard;
     window.shareTo = shareTo;
 });
+
+// Domain restriction check
+(function() {
+  const allowedDomains = ['watch.yosintvlive.com', 'yosintvlive.com']; // Added 'localhost' for testing
+  const currentDomain = window.location.hostname.toLowerCase().split(':')[0]; // Normalize domain, remove port
+
+  if (!allowedDomains.includes(currentDomain)) {
+    // Redirect to the main allowed domain
+    window.location.replace('https://www.yosin-tv.net/');
+  } else {
+    // Allowed domain - place your code here
+    console.log('Domain allowed:', currentDomain);
+    // Your main code logic can go here
+  }
+})();

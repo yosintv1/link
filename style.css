@@ -136,10 +136,17 @@ iframe {
     overflow: hidden;
 }
 
-.ad-container iframe {
+.ad-wrapper {
+    display: inline-block;
+    max-width: 100%;
+}
+
+.ad-wrapper iframe {
     width: 728px;
     height: 90px;
     border: none;
+    display: block;
+    margin: 0 auto;
 }
 
 .disclaimer-text {

@@ -126,7 +126,6 @@ iframe {
     border-radius: 6px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
-
 .ad-container {
     display: flex;
     justify-content: center;
@@ -136,18 +135,33 @@ iframe {
     overflow: hidden;
 }
 
+.ad-desktop,
+.ad-mobile {
+    width: 100%;
+    text-align: center;
+}
+
 .ad-wrapper {
     display: inline-block;
     max-width: 100%;
 }
 
-.ad-wrapper iframe {
+.ad-desktop .ad-wrapper iframe {
     width: 728px;
     height: 90px;
     border: none;
     display: block;
     margin: 0 auto;
 }
+
+.ad-mobile .ad-wrapper iframe {
+    width: 300px;
+    height: 250px;
+    border: none;
+    display: block;
+    margin: 0 auto;
+}
+
 
 .disclaimer-text {
     font-weight: 700;

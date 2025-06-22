@@ -126,6 +126,7 @@ iframe {
     border-radius: 6px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
+
 .ad-container {
     display: flex;
     justify-content: center;
@@ -161,7 +162,6 @@ iframe {
     display: block;
     margin: 0 auto;
 }
-
 
 .disclaimer-text {
     font-weight: 700;
@@ -454,13 +454,21 @@ body.theme-dark {
         padding: 0 15px;
     }
 
+    .ad-mobile .ad-wrapper {
+        transform: scale(0.85);
+        transform-origin: center;
+    }
+
+    
     .player-section {
         padding: 15px;
     }
 
-   .ad-container iframe {
-        width: 468px;
-        height: 60px;
+.ad-desktop {
+        display: none;
+    }
+    .ad-mobile {
+        display: block;
     }
     
     
@@ -523,11 +531,13 @@ body.theme-dark {
 }
 
    @media (max-width: 480px) {
-    .ad-container iframe {
-        width: 320px;
-        height: 50px;
+.ad-desktop {
+        display: block;
     }
-    
+    .ad-mobile {
+        display: none;
+    }
+}
     
     @media (max-width: 480px) {
     .disclaimer-text {

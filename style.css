@@ -437,6 +437,12 @@ body.theme-dark {
         padding: 15px;
     }
 
+   .ad-container iframe {
+        width: 468px;
+        height: 60px;
+    }
+    
+    
     .disclaimer {
         padding: 10px;
     }
@@ -495,7 +501,14 @@ body.theme-dark {
     }
 }
 
-@media (max-width: 480px) {
+   @media (max-width: 480px) {
+    .ad-container iframe {
+        width: 320px;
+        height: 50px;
+    }
+    
+    
+    @media (max-width: 480px) {
     .disclaimer-text {
         font-size: 14px;
     }

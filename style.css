@@ -6,7 +6,7 @@
     --dark-primary: #1565c0;
     --dark-bg: #1a1a1a;
     --dark-text: #e0e0e0;
-    --border-radius: 6px;
+    --border-radius: 1px;
     --shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     --font-family: 'Poppins', sans-serif;
     --title-font: 'Merriweather', serif;
@@ -125,42 +125,6 @@ iframe {
     color: var(--highlight-text);
     border-radius: 6px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-}
-
-.ad-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 15px 0;
-    width: 100%;
-    overflow: hidden;
-}
-
-.ad-desktop,
-.ad-mobile {
-    width: 100%;
-    text-align: center;
-}
-
-.ad-wrapper {
-    display: inline-block;
-    max-width: 100%;
-}
-
-.ad-desktop .ad-wrapper iframe {
-    width: 728px;
-    height: 90px;
-    border: none;
-    display: block;
-    margin: 0 auto;
-}
-
-.ad-mobile .ad-wrapper iframe {
-    width: 300px;
-    height: 250px;
-    border: none;
-    display: block;
-    margin: 0 auto;
 }
 
 .disclaimer-text {
@@ -454,24 +418,10 @@ body.theme-dark {
         padding: 0 15px;
     }
 
-    .ad-mobile .ad-wrapper {
-        transform: scale(0.85);
-        transform-origin: center;
-    }
-
-    
     .player-section {
         padding: 15px;
     }
 
-.ad-desktop {
-        display: none;
-    }
-    .ad-mobile {
-        display: block;
-    }
-    
-    
     .disclaimer {
         padding: 10px;
     }
@@ -530,16 +480,7 @@ body.theme-dark {
     }
 }
 
-   @media (max-width: 480px) {
-.ad-desktop {
-        display: block;
-    }
-    .ad-mobile {
-        display: none;
-    }
-}
-    
-    @media (max-width: 480px) {
+@media (max-width: 480px) {
     .disclaimer-text {
         font-size: 14px;
     }

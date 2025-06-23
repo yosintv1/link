@@ -1,6 +1,6 @@
 const channels = {
 
-fox: " https://yosintv2.github.io/bkp/plyrr.html?url=https://32tech0steam0dp01.org/live/UK_SkySportsCricketFHD/chunks.m3u8 ", 
+fox: " https://yosintv.github.io/player/1m.html?url=https://uugg.hatsune86.space/lchd-foxsports501.m3u8 ", 
 willow: " https://yosintv.github.io/yosintv/jwplayers.html?src=https://kleanembed.online/embed/f7dc5cb51217cf8eda81bc5a822a1548 ", 
 
 

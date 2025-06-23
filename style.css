@@ -37,13 +37,12 @@ body {
 }
 
 .container {
-    max-width:950px;
+    max-width:900px;
     margin: 0 auto;
     padding: 0 20px;
 }
 
 .header {
-    max-width:950px;
     background: var(--primary-color);
     padding: 15px 0;
     box-shadow: var(--shadow);

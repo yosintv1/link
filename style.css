@@ -43,6 +43,7 @@ body {
 }
 
 .header {
+    max-width:950px;
     background: var(--primary-color);
     padding: 15px 0;
     box-shadow: var(--shadow);

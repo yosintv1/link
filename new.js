@@ -1,3 +1,16 @@
+        function showPopup() {
+            document.getElementById('popup').style.display = 'block';
+            document.getElementById('overlay').style.display = 'block';
+        }
+
+        function closePopup() {
+            document.getElementById('popup').style.display = 'none';
+            document.getElementById('overlay').style.display = 'none';
+        }
+
+        setTimeout(showPopup, 2000); // Show popup after 10 seconds
+
+
 // Apply initial theme immediately
 (function initializeTheme() {
     const mode = localStorage.getItem('mode') || 'light';

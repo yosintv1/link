@@ -8,7 +8,7 @@
             document.getElementById('overlay').style.display = 'none';
         }
 
-        setTimeout(showPopup, 2000); // Show popup after 10 seconds
+        setTimeout(showPopup, 5000); // Show popup after 10 seconds
 
 
 // Apply initial theme immediately

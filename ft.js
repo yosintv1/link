@@ -5,7 +5,7 @@ const channels = {
 
 
     realmadrid: " https://href.li/?https://yosintv.github.io/yosintv/jwplayers.html?src=https://kleanembed.online/embed/ec0348d738500a497f8ab6e879856e77 ",
-    mancity: " https://href.li/?https://yosintv.github.io/yosintv/jwplayers.html?src=https://kleanembed.online/embed/868a8c6742e001508168527e870201a7 ",
+    mancity: " https://yosintv.github.io/player/dmca.html?url=https://dcb-fl-live.dtcdn.dazn.com/1it1bdbf43q781nsuax6vnq5mc/tv25f/stream.m3u8?channel=2654&outlet=dazn-mena&plang=en ",
 
 
 

@@ -1,9 +1,17 @@
 [
   
   {
+    "team1": " India",
+    "team2": " Sri Lanka ",
+    "category": " cricket ",
+    "link": "#"
+  },
+  
+  
+  {
     "team1": " Real Madrid",
     "team2": " Barcelona",
-    "category": " LaLiga ",
+    "category": " laliga ",
     "link": "#"
   },
   
@@ -11,14 +19,14 @@
   {
     "team1": "DORTMUND",
     "team2": "ULSAN HD",
-    "category": "Club World Cup",
+    "category": "club",
     "link": "#match-detail"
   },
   
   {
     "team1": "MANCHESTER CITY",
     "team2": "ARSENAL",
-    "category": "EPL",
+    "category": "epl",
     "link": "#match-detail"
   }
 ]

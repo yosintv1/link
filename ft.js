@@ -9,7 +9,7 @@ const channels = {
 
 
 
-    club: " https://yosintv.github.io/yosintv/jwplayers.html?src=https://embedrun.store/embed/192e1093-4977-11f0-8f00-ecf4bbdafde4 ", // 5 Sports
+    club: " https://yosintv.github.io/player/dmca.html?url=https://dcb-fl-live.dtcdn.dazn.com/ldljt9s40nfq1cba0crx9baox/all/avc_hls_global-video=288000.m3u8 ", // 5 Sports
     club1: " https://yosintv2.github.io/bkp/plyrr.html?url=https://shls-masr-ak.akamaized.net/out/v1/d5036cabf11e45bf9d0db410ca135c18/index.m3u8	 ", // masrtv2
     club2: " https://yosintv2.github.io/bkp/plyrr.html?url=https://shls-masr2-ak.akamaized.net/out/v1/f683685242b549f48ea8a5171e3e993a/index.m3u8	 ", // masrtv2
     amtv: " https://yosintv2.github.io/bkp/plyrr.html?url=https://live-evg1.tv360.bitel.com.pe/bitel/americatv/playlist.m3u8 ", // americatv

@@ -10,7 +10,7 @@ const channels = {
 
 
     trt1: " https://yosintv.github.io/player/player3.html?url=https://test.dreamboxserver.net/trtspor/index.m3u8 ", // TRT 1
-    mbc5: " https://yosintv.github.io/player/player3.html?url=https://shls-mbc5-prod-dub.shahid.net/out/v1/2720564b6a4641658fdfb6884b160da2/index.m3u8 ", // MBC 5
+    mbc5: " https://yosintv.github.io/player/player2.html?url=https://shls-masr2-ak.akamaized.net/out/v1/2720564b6a4641658fdfb6884b160da2/index.m3u8 ", // MBC 5
     mbc2: " https://yosintv2.github.io/bkp/plyrr.html?url=https://shls-masr-ak.akamaized.net/out/v1/d5036cabf11e45bf9d0db410ca135c18/index.m3u8	 ", // MBC 2
     amtv: " https://yosintv2.github.io/bkp/plyrr.html?url=https://live-evg1.tv360.bitel.com.pe/bitel/americatv/playlist.m3u8 ", // americatv
 

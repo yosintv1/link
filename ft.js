@@ -1,7 +1,8 @@
 const channels = {
     ____: " ____  ",
 
-    clubb: " https://yosintv.github.io/yosintv/jwplayers.html?src=https://cheapmarket.blog/idea/?id=1",
+    clubb: " https://yosintv.github.io/yosintv/jwplayers.html?src=https://cheapmarket.blog/idea/?id=1 ",
+    chelsea: " https://yosintv.github.io/player/dmca.html?url=https://hls.uouetrq19.com/live/hd-en-6MtMdwaQr8ZBz1zxGP.m3u8?txSecret=d091cdb7f225911c1369cb4a294198be&txTime=6869CFBB ",
 
 
     realmadrid: " https://yosintv.github.io/player/dmca.html?url=https://hls.uouetrq19.com/live/hd-en-6MtMdwaQr6Mi7YB37V.m3u8?txSecret=33e94531b4b020a6b21a5fb8b032080c&txTime=686581FB ",

@@ -5,7 +5,7 @@ const channels = {
     psg: " https://yosintv.github.io/player/dmca.html?url=https://dcb-fl-live.dtcdn.dazn.com/7hpehv3ghmi41khihuzlcvf03/mob25f/stream.m3u8?channel=2650&outlet=dazn-mena&plang=ar ",
 
 
-    realmadrid: " https://yosintv.github.io/player/dmca.html?url=https://dcb-fl-live.dtcdn.dazn.com/7hpehv3ghmi41khihuzlcvf03/mob25f/stream.m3u8?channel=2650&outlet=dazn-mena&plang=ar ",
+    realmadrid: " https://yosintv.github.io/player/dmca.html?url=https://dcb-fl-live.dtcdn.dazn.com/i6z2spsqrvti1oi0tkrzrx7ma/mob25f/stream.m3u8?channel=2654&outlet=dazn-mena&plang=ar ",
     arabic: " https://yosintv.github.io/player/dmca.html?url=https://shls-live-ak.akamaized.net/out/v1/0965e4d7deae49179172426cbfb3bc5e/index.m3u8 ",
 
 

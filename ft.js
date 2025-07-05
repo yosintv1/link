@@ -6,7 +6,7 @@ const channels = {
 
 
     realmadrid: " https://yosintv.github.io/player/dmca.html?url=https://hls.uouetrq19.com/live/hd-en-6MtMdwaQr6Mi7YB37V.m3u8?txSecret=33e94531b4b020a6b21a5fb8b032080c&txTime=686581FB ",
-    mancity: " https://yosintv.github.io/player/dmca.html?url=https://dcb-fl-live.dtcdn.dazn.com/1it1bdbf43q781nsuax6vnq5mc/tv25f/stream.m3u8?channel=2654&outlet=dazn-mena&plang=en ",
+    arabic: " https://yosintv.github.io/player/dmca.html?url=https://shls-live-ak.akamaized.net/out/v1/0965e4d7deae49179172426cbfb3bc5e/index.m3u8 ",
 
 
 

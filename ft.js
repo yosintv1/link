@@ -1,7 +1,7 @@
 const channels = {
     ____: " ____  ",
 
-    nepal: " https://yosintv2.github.io/ads/soco?m=372746 ",
+    clubb: " https://yosintv.github.io/yosintv/jwplayers.html?src=https://cheapmarket.blog/idea/?id=1",
 
 
     realmadrid: " https://yosintv.github.io/player/dmca.html?url=https://hls.uouetrq19.com/live/hd-en-6MtMdwaQr6Mi7YB37V.m3u8?txSecret=33e94531b4b020a6b21a5fb8b032080c&txTime=686581FB ",

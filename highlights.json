@@ -1,5 +1,13 @@
 [
   
+{
+  "id": "fluvche",
+  "team1": "FLUMINENSE",
+  "team2": "CHELSEA",
+  "category": "Club World Cup",
+  "link": "video?src=https://highlight.api-football.xyz/2025/07/08/1752012806422/index.m3u8"
+},
+  
   {
   "id": "monvint",
   "team1": "MONTREAL",

@@ -1,7 +1,7 @@
 const channels = {
     
     
-    psg: " https://yosintv.github.io/player/dmca.html?url=https://hls.uouetrq19.com/live/hd-en-6MtMdwaQqkaPHDjnjR.m3u8?txSecret=eecf398cb6c1ef56afb183f0e0bb74c3&txTime=6875563C ",
+    psg: " https://linnk.pages.dev/football?id=sports5 ",
     psg1: " https://yosintv.github.io/yosintv/jwplayers.html?src=https://www.kora.fm/albaplayer/ben1/?serv=3 ",
     psg2: " https://yosintv.github.io/yosintv/jwplayers.html?src=https://cheapmarket.blog/idea/?id=1 ",
 

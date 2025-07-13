@@ -1,6 +1,7 @@
 const channels = {
 
 ten1: " https://yosintv.github.io/player/1m.html?url=https://tataplay.slivcdn.com//hls/live/2011747/TEN1HD/master.m3u8 ", 
+ten2: " https://yosintv.github.io/player/1m.html?url=https://tataplay.slivcdn.com/hls/live/2020434/TEN2HD/master.m3u8 ", 
 ten3: " https://yosintv.github.io/player/1m.html?url=https://tataplay.slivcdn.com/hls/live/2020591/TEN3HD/master_2000.m3u8 ", 
 fox1: " https://yosintv.github.io/player/1m.html?url=https://uugg.hatsune86.space/lchd-foxsports501.m3u8 ", 
 willow: " https://yosintv.github.io/player/player3.html?url=https://sinelive-sineproxy.hf.space/proxy/m3u?url=38.96.178.201/live/WILLOWTV/index.m3u8 ", 

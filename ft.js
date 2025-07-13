@@ -1,7 +1,7 @@
 const channels = {
     ____: " ____  ",
 
-    psg: " https://yosintv.github.io/yosintv/jwplayers.html?src=https://goalzlive.xyz/events/stream1/ ",
+    psg: " https://yosintv.github.io/player/dmca.html?url=https://dcb-fl-live.dtcdn.dazn.com/9tkwlfc7xr1d1r6nmolg84hzi/mob25f/stream.m3u8?channel=2650&outlet=dazn-mena&plang=ar ",
     psg1: " https://yosintv.github.io/player/dmca.html?url=https://d3o3cim6uzorb4.cloudfront.net/out/v1/0965e4d7deae49179172426cbfb3bc5e/index.m3u8 ",
 
 

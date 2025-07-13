@@ -2,8 +2,7 @@ const channels = {
     ____: " ____  ",
 
     psg: " https://linnk.pages.dev/soon?time=1752433200 ",
-    psg1: " https://linnk.pages.dev/soon?time=1752433200 ",
-    psg2: " https://linnk.pages.dev/soon?time=1752433200 ",
+    psg1: " https://yosintv2.github.io/ads/ak?m=147801 ",
 
 
     realmadrid1: " https://yosintv.github.io/player/dmca.html?url=https://1rinij81ehes2uswech6drot7durixl2r0.rtgjmfvikmgtgrvkpbg.shop/96829d01859587f2a3db83c5dba951f9.m3u8 ",

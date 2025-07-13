@@ -1,7 +1,9 @@
 const channels = {
     ____: " ____  ",
-
-    psg: " https://yosintv.github.io/player/dmca.html?url=https://dcb-fl-live.dtcdn.dazn.com/9tkwlfc7xr1d1r6nmolg84hzi/all/avc_hls_global-video=288000.m3u8 ",
+    
+    
+    psg: " https://yosintv.github.io/player/dmca.html?url=https://hls.uouetrq19.com/live/hd-en-6MtMdwaQqkaPHDjnjR.m3u8?txSecret=eecf398cb6c1ef56afb183f0e0bb74c3&txTime=6875563C ",
+    psg2: " https://yosintv.github.io/player/dmca.html?url=https://dcb-fl-live.dtcdn.dazn.com/9tkwlfc7xr1d1r6nmolg84hzi/all/avc_hls_global-video=288000.m3u8 ",
     psg1: " https://yosintv.github.io/player/dmca.html?url=https://d3o3cim6uzorb4.cloudfront.net/out/v1/0965e4d7deae49179172426cbfb3bc5e/index.m3u8 ",
 
 

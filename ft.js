@@ -3,8 +3,8 @@ const channels = {
     
     
     psg: " https://yosintv.github.io/player/dmca.html?url=https://hls.uouetrq19.com/live/hd-en-6MtMdwaQqkaPHDjnjR.m3u8?txSecret=eecf398cb6c1ef56afb183f0e0bb74c3&txTime=6875563C ",
-    psg2: " https://yosintv.github.io/player/dmca.html?url=https://dcb-fl-live.dtcdn.dazn.com/9tkwlfc7xr1d1r6nmolg84hzi/all/avc_hls_global-video=288000.m3u8 ",
-    psg1: " https://yosintv.github.io/player/dmca.html?url=https://d3o3cim6uzorb4.cloudfront.net/out/v1/0965e4d7deae49179172426cbfb3bc5e/index.m3u8 ",
+    psg1: " https://yosintv.github.io/yosintv/jwplayers.html?src=https://www.kora.fm/albaplayer/ben1/?serv=3 ",
+    psg2: " https://yosintv.github.io/player/dmca.html?url=https://d3o3cim6uzorb4.cloudfront.net/out/v1/0965e4d7deae49179172426cbfb3bc5e/index.m3u8 ",
 
 
     realmadrid1: " https://yosintv.github.io/player/dmca.html?url=https://1rinij81ehes2uswech6drot7durixl2r0.rtgjmfvikmgtgrvkpbg.shop/96829d01859587f2a3db83c5dba951f9.m3u8 ",

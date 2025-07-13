@@ -1,7 +1,7 @@
 const channels = {
     ____: " ____  ",
 
-    psg: " https://linnk.pages.dev/soon?time=1752433200 ",
+    psg: " https://yosintv.github.io/yosintv/jwplayers.html?src=https://goalzlive.xyz/events/stream1/ ",
     psg1: " https://yosintv.github.io/yosintv/jwplayers.html?src=https://goalzlive.xyz/events/stream1/ ",
 
 

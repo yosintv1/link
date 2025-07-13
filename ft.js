@@ -2,7 +2,7 @@ const channels = {
     ____: " ____  ",
 
     psg: " https://yosintv.github.io/yosintv/jwplayers.html?src=https://goalzlive.xyz/events/stream1/ ",
-    psg1: " https://yosintv.github.io/yosintv/jwplayers.html?src=https://goalzlive.xyz/events/stream1/ ",
+    psg1: " https://yosintv.github.io/player/dmca.html?url=https://d3o3cim6uzorb4.cloudfront.net/out/v1/0965e4d7deae49179172426cbfb3bc5e/index.m3u8 ",
 
 
     realmadrid1: " https://yosintv.github.io/player/dmca.html?url=https://1rinij81ehes2uswech6drot7durixl2r0.rtgjmfvikmgtgrvkpbg.shop/96829d01859587f2a3db83c5dba951f9.m3u8 ",

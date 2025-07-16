@@ -7,7 +7,7 @@
 
         
       "f1": {
-        url: "https://d2sshbxprtwbjg.cloudfront.net/out/v1/5a00690119224df688a7c3d2e9c7022f/index.m3u8",
+        url: " https://hls.uouetrq19.com/live/sd-6MtMPPaKE6nmMYz647.m3u8?txSecret=c7fb6b34c90e7b9580d20533cb6d021e&txTime=68798A0D ",
         poster: "https://i.ibb.co/0RjkVHK0/IMG-20250614-213759-410.jpg"
       },
 

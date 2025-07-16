@@ -1,6 +1,6 @@
     const streamMap = {
-      "sky": {
-        fox: " https://tataplay.slivcdn.com//hls/live/2011747/TEN1HD/master.m3u8 ",
+      "mls": {
+        fox: " https://subrugopuciblchlvl6uqa666p23rig.happy-ending.site/54290fa6f10ebda2ecea576d1ae64ac3.m3u8 ",
         poster: " https://images.fancode.com/skillup-uploads/cms-media/127628_5263_SCO_NEP_fc-Web.png?hash=eyJrZXkiOiJza2lsbHVwLXVwbG9hZHMvY21zLW1lZGlhLzEyNzYyOF81MjYzX1NDT19ORVBfZmMtV2ViLnBuZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJmaXQiOiJjb3ZlciIsInBvc2l0aW9uIjoidG9wIiwid2lkdGgiOjU4MCwiaGVpZ2h0IjoyNDB9LCJ3ZWJwIjp7InF1YWxpdHkiOjYwLCJsb3NzbGVzcyI6ZmFsc2V9fSwib3V0cHV0Rm9ybWF0Ijoid2VicCJ9 "
       },
       "f1": {

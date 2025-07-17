@@ -1,7 +1,7 @@
     const streamMap = {
         
       "mls": {
-        url: " https://subrugopuciblchlvl6uqa666p23rig.happy-ending.site/54290fa6f10ebda2ecea576d1ae64ac3.m3u8 ",
+        url: " https://pull.niur.live/live/stream-445260_lhd.m3u8?txSecret=161a514e2bef897ad497beb9581ac716&txTime=6878973e ",
         poster: " https://web.cricfoot.net/logo.png "
       },
 

@@ -1,6 +1,6 @@
     const streamMap = {
         
-      " test1 ": {
+      "test1": {
         url: " https://pull.niur.live/live/stream-9912099_lhd.m3u8?txSecret=7df1a3d86fdad175d91fcdbc67674807&txTime=6879ea60 ",
         poster: " https://web.cricfoot.net/logo.png "
       },

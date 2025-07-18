@@ -6,8 +6,8 @@
       },
 
         
-      "f1": {
-        url: " https://hls.uouetrq19.com/live/sd-6MtMPPaKE6nmMYz647.m3u8?txSecret=c7fb6b34c90e7b9580d20533cb6d021e&txTime=68798A0D ",
+      "ten3": {
+        url: " https://tataplay.slivcdn.com/hls/live/2020591/TEN3HD/master.m3u8 ",
         poster: " https://web.cricfoot.net/logo.png "
       },
 
